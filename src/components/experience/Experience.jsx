@@ -1,6 +1,6 @@
 import React from 'react';
 import './experience.css';
-import { BsCheck2Circle } from 'react-icons/bs';
+import { BsCheck2Circle } from "react-icons/bs";
 
 function Experience () {
     return (

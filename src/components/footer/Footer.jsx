@@ -1,7 +1,7 @@
 import React from 'react';
-import './footer.css'
-import { AiFillFacebook, AiOutlineInstagram, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-import { Logo } from '../../assets/my-logo.png'
+import './footer.css';
+import { AiFillFacebook, AiOutlineInstagram, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { Logo } from '../../assets/my-logo.png';
 
 function Footer () {
     return (
