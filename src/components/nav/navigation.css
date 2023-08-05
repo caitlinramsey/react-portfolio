@@ -1,0 +1,46 @@
+:root {
+    --nav-background: hotpink;
+    --nav-icons: black;
+    --hover: grey;
+}
+
+nav {
+  background: var(--nav-background);
+  width: max-content;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(5px);
+}
+
+nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 40%;
+    display: flex;
+    color: var(--nav-icons);
+    font-size: 1.1rem;
+  }
+  
+  nav a:hover {
+    background: var(--hover);
+  }
+  
+  nav a.active {
+    background: var(--nav-background);
+    color: var(--nav-icons);
+  }
+  
+  @media screen and (max-width: 400px) {
+      nav {
+      width: 98%;
+      padding: 0.5rem 1.5rem;
+      gap: 0.5rem;
+    }
+  }

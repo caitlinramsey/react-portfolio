@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-// import './nav.css';
+import './navigation.css';
 import {BiHomeAlt, BiUser, BiCodeCurly, BiSolidContact} from 'react-icons/bi';
 import {FaServicestack} from 'react-icons/fa';
 import {GrStackOverflow} from 'react-icons/gr';
