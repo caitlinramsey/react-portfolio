@@ -4,7 +4,7 @@ import project1 from '../../assets/zooquarium.png';
 import project2 from '../../assets/borrowhood-mockup.png';
 import project3 from '../../assets/weather-forecast.png';
 import project4 from '../../assets/note-taker.png';
-import project5 from '../../assets/horse-knowledge.png';
+import project5 from '../../assets/horse-knowledge-quiz.png';
 import project6 from '../../assets/workday-scheduler.png';
 
 const projectInfo = [
