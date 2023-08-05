@@ -17,12 +17,12 @@ function About() {
 
                 <div className='about_me_content'>
                     <p>
-                        I graduted from Cedar Crest College in May 2019 with a Bachelor of Science in Environmental Conservation and a Bachelor of Arts in New Media. 
-                        <br/>
-                        I am an organized, hard-working individual..
+                        I graduated from Cedar Crest College in May 2019 with a Bachelor of Science in Environmental Conservation and a Bachelor of Arts in New Media. 
+                        <br/><br/>
+                        I am an organized, hard-working individual.
                     </p>
 
-                    <a href='#contact' className='btn btn-primary about_btn'>
+                    <a href='#contact' className='btn contact_btn'>
                         Contact Me
                     </a>
                 </div>

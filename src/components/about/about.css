@@ -1,0 +1,89 @@
+:root {
+    --contact-btn: hotpink;
+    --text: black;
+    --hover: pink;
+}
+
+h1 {
+    text-align: center;
+}
+
+.about_me_container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 15%;
+}
+
+.about_me {
+  width: 100%;
+  /* aspect-ratio: 1; */
+  border-radius: 2rem;
+  /* background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  ); */
+}
+
+.about_me_image {
+  border-radius: 2rem;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.about_me_image:hover {
+  transform: rotate(0deg);
+}
+
+.about_me_content {
+    width: 50%;
+}
+
+.about_me_content p {
+    margin: 2rem 0 2.6rem;
+  }
+
+.contact_btn {
+    background-color: var(--contact-btn);
+    text-decoration: none;
+    color: var(--text);
+    font-weight: bold;
+    padding: .8rem;
+    border-radius: .4rem;
+}
+
+.contact_btn:hover {
+    background-color: var(--hover);
+}
+
+@media screen and (max-width: 1024px) {
+    .about_me_container {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+  
+    .about_me {
+      width: 50%;
+      margin: 2rem auto 4rem;
+    }
+  
+    .about_me_content {
+      text-align: center;
+    }
+  
+    .about_me_content p {
+      margin: 1rem 0 1.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .about_me {
+      width: 65%;
+      margin: 0 auto 3rem;
+    }
+  
+    .about_me_content p {
+      margin: 1.5rem 0;
+    }
+  }
