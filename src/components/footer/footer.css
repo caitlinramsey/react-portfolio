@@ -30,6 +30,15 @@
   margin: 0 auto 2rem;
 }
 
+.pageLinks > li {
+    list-style: none;
+}
+
+.pageLinks li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
 .socialLinks {
   display: flex;
   justify-content: center;
