@@ -75,7 +75,7 @@ function Project () {
                                 </a>
                                 <a
                                     href={demo}
-                                    className='btn btn-primary'
+                                    className='btn'
                                     target='_blank'
                                 >
                                     Live Site

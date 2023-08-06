@@ -1,0 +1,76 @@
+:root {
+    --hover: hotpink;
+    --background: pink;
+    --button: hotpink;
+    --text: black;
+}
+
+#project > h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+.project_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project_item {
+  background: var(--background);
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.project_item:hover {
+  border-color: var(--hover);
+  background: transparent;
+}
+
+.project_item-image {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.project_item h3 {
+  margin: 1rem 0 1rem;
+  font-size: 1.8rem;
+}
+
+.project_item-desc {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+    background-color: var(--button);
+    padding: 1rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    color: var(--text);
+
+}
+
+/* ----- MEDIUM MEDIA QUERY ----- */
+@media screen and (max-width: 1024px) {
+  .project_container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.15rem;
+  }
+}
+
+/* ----- SMALL MEDIA QUERY ----- */
+@media screen and (max-width: 600px) {
+  .project_container {
+    grid-template-columns: 1fr;
+  }
+
+  .project_item {
+    border-radius: 1.8rem;
+  }
+}
