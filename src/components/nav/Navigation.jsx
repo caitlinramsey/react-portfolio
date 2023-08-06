@@ -13,8 +13,8 @@ function Navigation () {
             <Link to='header' spy={true} smooth={true} duration={500} activeClass='active'><BiHomeAlt/></Link>
             <Link to='about' spy={true} smooth={true} duration={500} activeClass='active'><BiUser/></Link>
             <Link to='experience' spy={true} smooth={true} duration={500} activeClass='active'><BiCodeCurly/></Link>
-            <Link to='services' spy={true} smooth={true} duration={500} activeClass='active'><FaServicestack/></Link>
             <Link to='project' spy={true} smooth={true} duration={500} activeClass='active'><GrStackOverflow/></Link>
+            <Link to='services' spy={true} smooth={true} duration={500} activeClass='active'><FaServicestack/></Link>
             <Link to='contact' spy={true} smooth={true} duration={500} activeClass='active'><BiSolidContact/></Link>
         </nav>
     )

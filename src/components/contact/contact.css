@@ -84,6 +84,13 @@ textarea::placeholder {
 
 #contact_btn {
     width: 20rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#contact_btn:hover {
+    background-color: var(--contact-fill);
+    cursor: pointer;
 }
 
 /* ----- MEDIUM MEDIA QUERY ----- */

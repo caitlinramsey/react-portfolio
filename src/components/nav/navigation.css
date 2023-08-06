@@ -1,7 +1,7 @@
 :root {
-    --nav-background: hotpink;
+    --nav-background: pink;
     --nav-icons: black;
-    --hover: grey;
+    --nav-hover: grey;
 }
 
 nav {
@@ -12,7 +12,7 @@ nav {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 2rem;
+  bottom: 3rem;
   display: flex;
   gap: 0.8rem;
   border-radius: 3rem;
@@ -29,7 +29,7 @@ nav a {
   }
   
   nav a:hover {
-    background: var(--hover);
+    background: var(--nav-hover);
   }
   
   nav a.active {
