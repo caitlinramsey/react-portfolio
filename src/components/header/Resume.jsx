@@ -1,11 +1,12 @@
 import React from 'react';
 import ResumeFile from '../../assets/resume.pdf'
+import './resume.css'
 
 const Resume = () => {
     return (
         <div className='resume'>
-            <a href={ResumeFile} download className='btn'>Resume</a>
-            <a href='#contact' className='btn btn-primary'>Contact</a>
+            <a href={ResumeFile} download className='btn_resume'>Resume</a>
+            <a href='#contact' className='btn_contact'>Contact</a>
         </div>
     )
 }

@@ -1,11 +1,18 @@
 #header {
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .header_container {
     text-align: center;
     height: 100%;
     position: relative;
+}
+
+.header_container > h1 {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    font-size: 3rem;
 }
 
 .header_container > h4 {
