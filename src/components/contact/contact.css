@@ -1,0 +1,104 @@
+:root {
+    --contact-background: hotpink;
+    --contact-hover: orchid;
+    --contact-fill: pink;
+    --contact-text: black;
+    /* --a-text: white; */
+}
+
+#contact > h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.container.contact_container {
+    margin-left: 22%;
+    display: grid;
+    grid-template-columns: 20% 47%;
+    gap: 12%;
+}
+
+.contact_options {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact_option {
+    background: var(--contact-background);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.contact_option:hover {
+    background-color: var(--contact-hover);
+    border-color: var(--color-primary-variant);
+}
+
+.contact_option-icon {
+    font-size: 2rem;
+}
+
+.contact_option a {
+    margin-top: .5rem;
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--contact-text);
+    background-color: var(--contact-fill);
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input::placeholder {
+    color: var(--contact-text);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    background: transparent;
+    border: 2px solid var(--contact-background);
+    resize: none;
+    background-color: var(--contact-fill);
+}
+
+textarea {
+    padding-bottom: 6.5rem;
+}
+
+textarea::placeholder {
+    font-family: sans-serif;
+    color:var(--contact-text);
+}
+
+#contact_btn {
+    width: 20rem;
+}
+
+/* ----- MEDIUM MEDIA QUERY ----- */
+@media screen and (max-width: 1024px) {
+    .container.contact_container {
+        margin-left: auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+  }
+  
+  /* ----- SMALL MEDIA QUERY ----- */
+  @media screen and (max-width: 600px) {
+    .container.contact_container {
+        margin-left: auto;
+        grid-template-columns: 1fr;
+    }
+  }

@@ -1,5 +1,5 @@
 :root {
-    --background: pink;
+    --services-background: pink;
     --header-background: hotpink;
     --hover: orchid;
 }
@@ -16,7 +16,7 @@
 }
 
 .service {
-  background: var(--background);
+  background: var(--services-background);
   border-radius: 2rem;
   border: 1px solid var(--header-background);
   height: fit-content;
@@ -24,7 +24,6 @@
 }
 
 .service:hover {
-  /* background: transparent; */
   background-color: var(--hover);
   border-color: var(--header-background);
   cursor: default;

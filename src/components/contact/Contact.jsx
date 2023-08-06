@@ -24,7 +24,7 @@ function Contact() {
                             Want to connect?
                         </a>
                     </article>
-                    <article className='contact-option'>
+                    <article className='contact_option'>
                         <AiFillGithub className='contact_option-icon'/>
                         <h3>GitHub</h3>
                         <a href='https://github.com/caitlinramsey' target='blank' className=''>

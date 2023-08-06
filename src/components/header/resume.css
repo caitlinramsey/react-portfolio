@@ -1,6 +1,6 @@
 :root {
     --resume: hotpink;
-    --text: black;
+    --resume-text: black;
 }
 
 .btn_resume, .btn_contact {
@@ -8,6 +8,6 @@
     padding: 1rem;
     border-radius: .5rem;
     text-decoration: none;
-    color: var(--text);
+    color: var(--resume-text);
     font-size: 1.2rem;
 }

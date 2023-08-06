@@ -1,8 +1,8 @@
 :root {
     --hover: hotpink;
-    --background: pink;
+    --project-background: pink;
     --button: hotpink;
-    --text: black;
+    --project-text: black;
 }
 
 #project > h1 {
@@ -19,7 +19,7 @@
 }
 
 .project_item {
-  background: var(--background);
+  background: var(--project-background);
   padding: 1.3rem;
   border-radius: 2rem;
   border: 1px solid transparent;
@@ -52,7 +52,7 @@
     padding: 1rem;
     border-radius: .5rem;
     text-decoration: none;
-    color: var(--text);
+    color: var(--project-text);
 
 }
 
