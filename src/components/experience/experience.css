@@ -1,6 +1,7 @@
 :root {
-    --experience-background: hotpink;
-    --border: deeppink;
+    --experience-background: pink;
+    --experience-border: deeppink;
+    --experience-hover: hotpink;
     --experience-text: black;
 }
 
@@ -27,12 +28,11 @@
   padding: 2.4rem 5rem;
   border-radius: 2rem;
   border: 1px solid transparent;
-  transition: var(--transition);
 }
 
 .experience_container > div:hover {
-  background: transparent;
-  border-color: var(--border);
+  background-color: var(--experience-hover);
+  border-color: var(--experience-border);
   cursor: default;
 }
 
