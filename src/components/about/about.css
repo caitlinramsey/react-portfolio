@@ -14,7 +14,7 @@ h1 {
   gap: 15%;
 }
 
-.about_me {
+#about_me {
   width: 100%;
   /* aspect-ratio: 1; */
   border-radius: 2rem;

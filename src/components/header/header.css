@@ -1,4 +1,4 @@
-header {
+#header {
     padding-top: 2rem;
 }
 
@@ -8,13 +8,16 @@ header {
     position: relative;
 }
 
+.header_container > h4 {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    opacity: 0.6;
+}
+
 .resume {
     margin-top: 2rem;
     display: flex;
     gap: 1rem;
     justify-content: center;
-}
-
-h4 {
-    opacity: 0.6;
 }
