@@ -5,8 +5,8 @@ import aboutMe from '../../assets/me-and-boys.jpg';
 
 function About() {
     return (
-        <section id='about-me'>
-            <h1 className='about_header'>About Me</h1>
+        <section id='about_me'>
+            <h1>About Me</h1>
 
             <div className='container about_me_container'>
                 <div className='about_me'>
