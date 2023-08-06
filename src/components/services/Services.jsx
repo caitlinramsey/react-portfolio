@@ -13,17 +13,17 @@ function Services () {
                         <h2>Web Development</h2>
                     </div>
 
-                    <ul className='service_list'>
-                        <li><FaCheckDouble className='service_list-icon' />
+                    <ul className='service_name'>
+                        <li><FaCheckDouble className='service_name-icon' />
                         <p>Front-end and back-end development with database functionality.</p>
                         </li>
-                        <li><FaCheckDouble className='service_list-icon' />
+                        <li><FaCheckDouble className='service_name-icon' />
                         <p>Third-party platform development (Squarespace, WordPress, Wix, Weebly).</p>
                         </li>
-                        <li><FaCheckDouble className='service_list-icon' />
+                        <li><FaCheckDouble className='service_name-icon' />
                         <p>Responsive and semantic website design with accessibility in mind.</p>
                         </li>
-                        <li><FaCheckDouble className='service_list-icon' />
+                        <li><FaCheckDouble className='service_name-icon' />
                         <p>UX/UI centered design.</p>
                         </li>
                     </ul>
@@ -35,19 +35,19 @@ function Services () {
                     </div>
 
                     <ul className='service_name'>
-                        <li><FaCheckDouble className='service_list-icon' />
+                        <li><FaCheckDouble className='service_name-icon' />
                         <p>Content creation using Adobe Creative Suite and Canva.</p>
                         </li> 
-                        <li><FaCheckDouble className='service_list-icon' />
+                        <li><FaCheckDouble className='service_name-icon' />
                         <p>Photography and editing services available.</p>
                         </li> 
-                        <li><FaCheckDouble className='service_list-icon' />
+                        <li><FaCheckDouble className='service_name-icon' />
                         <p>Experience in managing and creating content for professional Facebook, Instagram, and Twitter accounts.</p>
                         </li>
-                        <li><FaCheckDouble className='service_list-icon' />
+                        <li><FaCheckDouble className='service_name-icon' />
                         <p>Advertising design services available.</p>
                         </li>
-                        <li><FaCheckDouble className='service_list-icon' />
+                        <li><FaCheckDouble className='service_name-icon' />
                         <p>Experience managing multiple social media accounts through AgoraPulse.</p>
                         </li> 
                     </ul>
