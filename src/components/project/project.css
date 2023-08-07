@@ -1,13 +1,15 @@
 :root {
-    --project-hover: hotpink;
-    --project-background: pink;
-    --project-button: hotpink;
-    --project-text: black;
+  --project-hover: hotpink;
+  --project-background: pink;
+  --project-button: hotpink;
+  --project-text: black;
 }
 
 #project > h1 {
-    text-align: center;
-    font-size: 4rem;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Borel", cursive;
+  box-shadow: 3px 3px black;
 }
 
 .project_container {
@@ -54,13 +56,13 @@
   margin-bottom: 1rem;
 }
 
-.github_btn, live_btn {
-    background-color: var(--project-button);
-    padding: 1rem;
-    border-radius: .5rem;
-    text-decoration: none;
-    color: var(--project-text);
-
+.github_btn,
+.live_btn {
+  background-color: var(--project-button);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: var(--project-text);
 }
 
 /* ----- MEDIUM MEDIA QUERY ----- */
