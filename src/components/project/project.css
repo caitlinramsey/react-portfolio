@@ -1,7 +1,7 @@
 :root {
-    --hover: hotpink;
+    --project-hover: hotpink;
     --project-background: pink;
-    --button: hotpink;
+    --project-button: hotpink;
     --project-text: black;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .project_item:hover {
-  border-color: var(--hover);
+  border-color: var(--project-hover);
   background: transparent;
 }
 
@@ -54,8 +54,8 @@
   margin-bottom: 1rem;
 }
 
-.btn {
-    background-color: var(--button);
+.github_btn, live_btn {
+    background-color: var(--project-button);
     padding: 1rem;
     border-radius: .5rem;
     text-decoration: none;

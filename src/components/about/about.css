@@ -1,7 +1,8 @@
 :root {
-    --contact-btn: hotpink;
-    --text: black;
-    --hover: pink;
+  --about-btn: hotpink;
+  --about-text: black;
+  --about-hover: orchid;
+  --about-background: pink;
 }
 
 #about_me {
@@ -13,14 +14,15 @@
   background: linear-gradient(
     45deg,
     transparent,
-    var(--contact-btn),
+    var(--about-btn),
     transparent
-  )
+  );
 }
 
 #about_me > h1 {
-    text-align: center;
-    font-size: 4rem;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Borel", cursive;
 }
 
 .about_me_container {
@@ -31,7 +33,7 @@
 }
 
 .about_me_image {
-  background-image: url('../../assets/me-and-boys.jpg');
+  background-image: url("../../assets/me-and-boys.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -44,54 +46,56 @@
 }
 
 .about_me_content {
-    width: 50%;
-    font-size: 1.5rem;
+  width: 50%;
+  font-size: 1.5rem;
 }
 
 .about_me_content p {
-    margin: 2rem 0 2.6rem;
-  }
-
-.contact_btn {
-    background-color: var(--contact-btn);
-    text-decoration: none;
-    color: var(--text);
-    font-weight: bold;
-    padding: .8rem;
-    border-radius: .4rem;
+  margin: 2rem 0 2.6rem;
+  font-family: "Borel", cursive;
 }
 
-.contact_btn:hover {
-    background-color: var(--hover);
+.about_btn {
+  background-color: var(--about-background);
+  text-decoration: none;
+  color: var(--about-text);
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+.about_btn:hover {
+  background-color: var(--about-hover);
 }
 
 @media screen and (max-width: 1024px) {
-    .about_me_container {
-      grid-template-columns: 1fr;
-      gap: 0;
-    }
-  
-    .about_me {
-      width: 50%;
-      margin: 2rem auto 4rem;
-    }
-  
-    .about_me_content {
-      text-align: center;
-    }
-  
-    .about_me_content p {
-      margin: 1rem 0 1.5rem;
-    }
+  .about_me_container {
+    grid-template-columns: 1fr;
+    gap: 0;
   }
-  
-  @media screen and (max-width: 600px) {
-    .about_me {
-      width: 65%;
-      margin: 0 auto 3rem;
-    }
-  
-    .about_me_content p {
-      margin: 1.5rem 0;
-    }
+
+  .about_me {
+    width: 50%;
+    margin: 2rem auto 4rem;
   }
+
+  .about_me_content {
+    text-align: center;
+  }
+
+  .about_me_content p {
+    margin: 1rem 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about_me {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+
+  .about_me_content p {
+    margin: 1.5rem 0;
+  }
+}

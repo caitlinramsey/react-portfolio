@@ -19,7 +19,7 @@ function About() {
                         I am an organized, hard-working, dependable individual. I am very passionate about being creative and problem-solving. 
                     </p>
 
-                    <a href='#contact' className='btn contact_btn'>
+                    <a href='../Contact' className='btn about_btn'>
                         Contact Me
                     </a>
                 </div>

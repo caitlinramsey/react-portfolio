@@ -86,13 +86,13 @@ textarea::placeholder {
     color:var(--contact-text);
 }
 
-#contact_btn {
+#submit_btn {
     width: 20rem;
     font-size: 1rem;
     font-weight: bold;
 }
 
-#contact_btn:hover {
+#submit_btn:hover {
     background-color: var(--contact-fill);
     cursor: pointer;
 }

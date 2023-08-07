@@ -68,14 +68,14 @@ function Project () {
                             <div className='project_item-desc'>
                                 <a
                                     href={github}
-                                    className='btn'
+                                    className='btn github_btn'
                                     target='_blank'
                                 >
                                     GitHub
                                 </a>
                                 <a
                                     href={demo}
-                                    className='btn'
+                                    className='btn live_btn'
                                     target='_blank'
                                 >
                                     Live Site

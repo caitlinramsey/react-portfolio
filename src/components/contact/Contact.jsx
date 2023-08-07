@@ -52,7 +52,7 @@ function Contact() {
                         placeholder='Please enter your message here'
                         required
                     ></textarea>
-                    <button type='submit' id='contact_btn' className='btn'>
+                    <button type='submit' id='submit_btn' className='btn'>
                         Submit
                     </button>
                 </form>
