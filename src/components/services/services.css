@@ -1,7 +1,7 @@
 :root {
-    --services-background: pink;
-    --header-background: hotpink;
-    --hover: orchid;
+  --services-background: pink;
+  --header-background: hotpink;
+  --hover: orchid;
 }
 
 #services {
@@ -9,8 +9,10 @@
 }
 
 #services > h1 {
-    text-align: center;
-    font-size: 2rem;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Borel", cursive;
+  box-shadow: 3px 3px black;
 }
 
 .services_container {
@@ -19,7 +21,7 @@
   gap: 3rem;
   padding-bottom: 2rem;
   padding-left: 5rem;
-  padding-right: 5rem
+  padding-right: 5rem;
 }
 
 .service {
@@ -44,8 +46,9 @@
 }
 
 .service_header h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
+  font-family: "Borel", cursive;
 }
 
 .service_name {
@@ -59,31 +62,30 @@
 }
 
 .service_name-icon {
-  margin-top: 01rem;
+  margin-top: 1.7rem;
 }
 
 .service_name p {
-    font-size: 1rem;
+  font-size: 1.2rem;
+  font-family: "Preahvihear", sans-serif;
 }
 
-/* ----- MEDIUM MEDIA QUERY ----- */
 @media screen and (max-width: 1024px) {
-    .services_container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
+  .services_container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 
-    .service {
-        height: auto;
-    }
+  .service {
+    height: auto;
   }
-  
-  /* ----- SMALL MEDIA QUERY ----- */
-  @media screen and (max-width: 600px) {
-    .services_container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
+}
+
+@media screen and (max-width: 600px) {
+  .services_container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
+}
