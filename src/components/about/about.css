@@ -27,6 +27,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 15%;
+  margin-bottom: 2rem;
 }
 
 .about_me_image {
