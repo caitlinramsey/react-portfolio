@@ -1,6 +1,7 @@
 :root {
     --resume: hotpink;
     --resume-text: black;
+    --resume-hover: orchid;
 }
 
 .btn_resume, .btn_contact {
@@ -10,4 +11,9 @@
     text-decoration: none;
     color: var(--resume-text);
     font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn_resume:hover, .btn_contact:hover {
+    background-color: var(--resume-hover);
 }

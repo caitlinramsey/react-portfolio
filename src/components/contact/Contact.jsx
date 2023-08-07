@@ -13,7 +13,7 @@ function Contact() {
                     <article className='contact_option'>
                         <HiOutlineMail className='contact_option-icon'/>
                         <h3>Email</h3>
-                        <a href='caitlinramsey@outlook.com' target='blank' className=''>
+                        <a href='mailto:caitlinramsey@outlook.com' target='blank' className=''>
                             Email Me
                         </a>
                     </article>

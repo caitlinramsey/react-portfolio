@@ -3,12 +3,16 @@
     --contact-hover: orchid;
     --contact-fill: pink;
     --contact-text: black;
-    /* --a-text: white; */
+}
+
+#contact {
+    padding-bottom: 16rem;
 }
 
 #contact > h1 {
     text-align: center;
     font-size: 2rem;
+    padding-bottom: 2rem;
 }
 
 .container.contact_container {
@@ -33,11 +37,6 @@
     transition: var(--transition);
 }
 
-.contact_option:hover {
-    background-color: var(--contact-hover);
-    border-color: var(--color-primary-variant);
-}
-
 .contact_option-icon {
     font-size: 2rem;
 }
@@ -51,6 +50,11 @@
     background-color: var(--contact-fill);
     padding: 1rem;
     border-radius: .5rem;
+}
+
+.contact_option a:hover {
+    background-color: var(--contact-hover);
+    border-color: var(--color-primary-variant);
 }
 
 form {
