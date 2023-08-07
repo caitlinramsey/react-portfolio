@@ -33,15 +33,15 @@
 .nav-tabs a {
   text-decoration: none;
   color: var(--nav-text);
+  font-family: "Preahvihear", sans-serif;
 }
 
 @media screen and (max-width: 1024px) {
   .nav-tabs {
     padding: 0px;
   }
-
 }
-  
+
 @media screen and (max-width: 600px) {
   .nav-tabs {
     display: block;
