@@ -1,31 +1,38 @@
 #header {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 .header_container {
-    text-align: center;
-    height: 100;
+  text-align: center;
+  height: 100;
 }
 
 .header_container > h1 {
-    text-align: center;
-    height: 100%;
-    font-size: 4rem;
-    font-family: 'Preahvihear', sans-serif;
+  text-align: center;
+  height: 100%;
+  font-size: 4rem;
+  font-family: "Preahvihear", sans-serif;
 }
 
 .header_container > h4 {
-    text-align: center;
-    height: 100%;
-    opacity: 0.8;
-    font-size: 1.7rem;
-    font-family: 'Borel', cursive;
-    box-shadow: 8px 8px 10px black;
+  text-align: center;
+  height: 100%;
+  opacity: 0.8;
+  font-size: 1.7rem;
+  font-family: "Borel", cursive;
+  box-shadow: 8px 8px 10px black;
 }
 
 .resume {
-    margin-top: 2rem;
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .header_container h1 {
+    margin-left: auto;
+    font-size: 2rem;
+  }
 }
