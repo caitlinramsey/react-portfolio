@@ -1,15 +1,15 @@
 :root {
   --project-hover: hotpink;
   --project-background: pink;
-  --project-button: hotpink;
   --project-text: black;
 }
 
 #project > h1 {
   text-align: center;
   font-size: 4rem;
+  padding-top: 1.5rem;
   font-family: "Borel", cursive;
-  box-shadow: 3px 3px black;
+  box-shadow: 6px 4px 1px 10px var(--project-text);
 }
 
 .project_container {
@@ -48,17 +48,20 @@
 .project_item h3 {
   margin: 1rem 0 1rem;
   font-size: 1.8rem;
+  font-family: "Preahvihear", sans-serif;
 }
 
 .project_item-desc {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
 }
 
 .github_btn,
 .live_btn {
-  background-color: var(--project-button);
+  background-color: var(--project-hover);
   padding: 1rem;
   border-radius: 0.5rem;
   text-decoration: none;

@@ -2,9 +2,18 @@ import React from 'react';
 import './contact.css';
 import { HiOutlineMail } from 'react-icons/hi';
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import background from '../../assets/red-panda.jpg'
 
 function Contact() {
     return (
+        <div style={{
+            backgroundImage: `url(${background})`,
+            backgroundRepeat: 'no-repeat',
+            height: '100vh',
+            backgroundPosition: '-450px',
+            backgroundSize: '3000px',
+            margin: '-10px',
+          }}>
         <section id='contact'>
             <h1>Contact Me</h1>
 
@@ -58,6 +67,7 @@ function Contact() {
                 </form>
             </div>
         </section>
+        </div>
     );
 }
 
