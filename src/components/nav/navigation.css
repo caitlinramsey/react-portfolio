@@ -18,15 +18,16 @@
   display: flex;
   justify-content: space-evenly;
   padding: 0;
+  font-weight: bold;
 }
 
 .nav-tabs li {
   list-style: none;
-  /* margin-top: 10rem; */
 }
 
 .nav-tabs a:hover {
   color: var(--nav-hover);
+  text-decoration: underline;
 }
 
 .nav-tabs a {
@@ -34,15 +35,13 @@
   color: var(--nav-text);
 }
 
-/* ----- MEDIUM MEDIA QUERY ----- */
 @media screen and (max-width: 1024px) {
   .nav-tabs {
     padding: 0px;
   }
 
 }
-
-/* ----- SMALL MEDIA QUERY ----- */
+  
 @media screen and (max-width: 600px) {
   .nav-tabs {
     display: block;
