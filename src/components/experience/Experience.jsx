@@ -105,6 +105,13 @@ function Experience () {
                         <article className='experience_details'>
                             <BsCheck2Circle className='experience_details-icon' />
                             <div>
+                                <h4>NoSQL</h4>
+                                <medium className='text-light'>Experienced</medium>
+                            </div>
+                        </article>
+                        <article className='experience_details'>
+                            <BsCheck2Circle className='experience_details-icon' />
+                            <div>
                                 <h4>MongoDB</h4>
                                 <medium className='text-light'>Experienced</medium>
                             </div>

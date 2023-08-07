@@ -1,8 +1,8 @@
 :root {
-    --experience-background: pink;
-    --experience-border: deeppink;
-    --experience-hover: hotpink;
-    --experience-text: black;
+  --experience-background: pink;
+  --experience-border: deeppink;
+  --experience-hover: hotpink;
+  --experience-text: black;
 }
 
 #experience {
@@ -10,15 +10,18 @@
 }
 
 #experience > h3 {
-    text-align: center;
-    font-size: 2rem;    
-    font-weight: bold;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 4rem;
+  font-family: "Borel", cursive;
 }
 
 #experience > h4 {
-    text-align: center;
-    opacity: 0.6; 
-    font-size: 1.3rem;   
+  text-align: center;
+  opacity: 0.6;
+  font-size: 1.3rem;
+  margin-top: 0;
+  font-family: "Preahvihear", sans-serif;
 }
 
 .experience_container {
@@ -46,15 +49,17 @@
 .experience_container div h3 {
   text-align: center;
   margin-bottom: 2rem;
+  font-family: "Borel", cursive;
 }
 
 .experience_frontend {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .experience_details div h4 {
   font-weight: bolder;
   font-size: 1.3rem;
+  font-family: "Preahvihear", sans-serif;
 }
 
 .experience_content {
@@ -69,52 +74,50 @@
 }
 
 .experience_details-icon {
-  margin-top: 1.7rem;
+  margin-top: 2.1rem;
   color: var(--experience-text);
   font-size: 1.5rem;
 }
 
 .text-light {
-    font-weight: bolder;
-    opacity: 0.6;
+  opacity: 0.7;
+  font-family: "Rubik", sans-serif;
 }
 
 .experience_backend {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
-/* ----- MEDIUM MEDIA QUERY ----- */
 @media screen and (max-width: 1024px) {
-    .experience_container {
-        grid-template-columns: 1fr;
-    }
-
-    .experience_container > div {
-        width: 100%;
-        padding: 0rem;
-        margin: 0 auto;
-    }
-
-    .experience_content {
-        padding: 1rem;
-    }
-
-    .text-light {
-      font-size: 1.3rem;
-    }
+  .experience_container {
+    grid-template-columns: 1fr;
   }
-  
-  /* ----- SMALL MEDIA QUERY ----- */
-  @media screen and (max-width: 600px) {
-    .experience_container {
-        gap: 1rem;
-    }
 
-    .experience_container > div {
-        padding: 0rem;
-    }
-
-    .text-light {
-      font-size: 1.1rem;
-    }
+  .experience_container > div {
+    width: 100%;
+    padding: 0rem;
+    margin: 0 auto;
   }
+
+  .experience_content {
+    padding: 1rem;
+  }
+
+  .text-light {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .experience_container {
+    gap: 1rem;
+  }
+
+  .experience_container > div {
+    padding: 0rem;
+  }
+
+  .text-light {
+    font-size: 1.1rem;
+  }
+}
