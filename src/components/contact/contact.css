@@ -1,115 +1,130 @@
 :root {
-    --contact-background: hotpink;
-    --contact-hover: orchid;
-    --contact-fill: pink;
-    --contact-text: black;
+  --submit-background: hotpink;
+  --submit-hover: orchid;
+  --submit-fill: pink;
+  --submit-text: black;
+  --submit-border: deeppink;
 }
 
 #contact {
-    padding-bottom: 16rem;
+  padding-bottom: 16rem;
 }
 
 #contact > h1 {
-    text-align: center;
-    font-size: 2rem;
-    padding-bottom: 2rem;
+  text-align: center;
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  font-family: "Borel", cursive;
 }
 
 .container.contact_container {
-    margin-left: 22%;
-    display: grid;
-    grid-template-columns: 20% 47%;
-    gap: 12%;
+  margin-left: 22%;
+  display: grid;
+  grid-template-columns: 20% 47%;
+  gap: 12%;
 }
 
 .contact_options {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .contact_option {
-    background: var(--contact-background);
-    padding: 1.2rem;
-    border-radius: 1.2rem;
-    text-align: center;
-    border: 1px solid transparent;
-    transition: var(--transition);
+  background: var(--submit-background);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
 }
 
 .contact_option-icon {
-    font-size: 2rem;
+  font-size: 2.5rem;
+}
+
+.contact_option h3 {
+  font-size: 1.2rem;
+  font-family: "Borel", cursive;
+  margin-bottom: 0;
 }
 
 .contact_option a {
-    margin-top: .5rem;
-    display: inline-block;
-    font-size: 1rem;
-    text-decoration: none;
-    color: var(--contact-text);
-    background-color: var(--contact-fill);
-    padding: 1rem;
-    border-radius: .5rem;
+  margin-top: 0.5rem;
+  display: inline-block;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--submit-text);
+  background-color: var(--submit-fill);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-family: "Preahvihear", sans-serif;
+  font-size: 1rem;
 }
 
 .contact_option a:hover {
-    background-color: var(--contact-hover);
-    border-color: var(--color-primary-variant);
+  background-color: var(--submit-hover);
+  border-color: var(--submit-border);
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 input::placeholder {
-    color: var(--contact-text);
+  color: var(--submit-text);
+  font-family: "Preahvihear", sans-serif;
+  font-size: 1rem;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 1.5rem;
-    border-radius: .5rem;
-    background: transparent;
-    border: 2px solid var(--contact-background);
-    resize: none;
-    background-color: var(--contact-fill);
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--submit-background);
+  resize: none;
+  background-color: var(--submit-fill);
 }
 
 textarea {
-    padding-bottom: 6.5rem;
+  padding-bottom: 6.5rem;
 }
 
 textarea::placeholder {
-    font-family: sans-serif;
-    color:var(--contact-text);
+  color: var(--submit-text);
+  font-family: "Preahvihear", sans-serif;
+  font-size: 1rem;
 }
 
 #submit_btn {
-    width: 20rem;
-    font-size: 1rem;
-    font-weight: bold;
+  width: 15rem;
+  font-size: 1.3rem;
+  background-color: var(--submit-background);
+  padding: 0.7rem;
+  border-radius: 1rem;
+  font-family: "Preahvihear", sans-serif;
 }
 
 #submit_btn:hover {
-    background-color: var(--contact-fill);
-    cursor: pointer;
+  background-color: var(--submit-fill);
+  cursor: pointer;
 }
 
-/* ----- MEDIUM MEDIA QUERY ----- */
 @media screen and (max-width: 1024px) {
-    .container.contact_container {
-        margin-left: auto;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
+  .container.contact_container {
+    margin-left: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
-  
-  /* ----- SMALL MEDIA QUERY ----- */
-  @media screen and (max-width: 600px) {
-    .container.contact_container {
-        margin-left: auto;
-        grid-template-columns: 1fr;
-    }
+}
+
+@media screen and (max-width: 600px) {
+  .container.contact_container {
+    margin-left: auto;
+    grid-template-columns: 1fr;
   }
+}
