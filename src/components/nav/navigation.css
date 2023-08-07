@@ -23,7 +23,7 @@
   color: var(--nav-text);
 }
 
-.horizontal-line {
+.h_line {
   width: 100%;
   height: 1px;
   background: var(--nav-text);

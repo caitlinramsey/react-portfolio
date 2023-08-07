@@ -1,6 +1,7 @@
 // import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Navigation from './components/nav/Navigation';
+import Footer from './components/footer/Footer'
 
 // import Header from './components/header/Header'
 // // import About from './components/about/About'
@@ -31,6 +32,7 @@ function App() {
       <Navigation />
       <main className='mx-3'>
         <Outlet />
+        <Footer />
       </main>
     </>
   );
