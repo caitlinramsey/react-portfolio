@@ -1,6 +1,5 @@
 import React from 'react';
 import './about.css';
-import aboutMe from '../../assets/me-and-boys.jpg';
 
 
 function About() {
@@ -10,16 +9,14 @@ function About() {
 
             <div className='container about_me_container'>
                 <div className='about_me'>
-                    <div className='about_me_image'>
-                        <img src={aboutMe} alt='A photo of me and my 2 dogs' />
-                    </div>
+                    <div className='about_me_image'></div>
                 </div>
 
                 <div className='about_me_content'>
                     <p>
-                        I graduated from Cedar Crest College in May 2019 with a Bachelor of Science in Environmental Conservation and a Bachelor of Arts in New Media. 
+                        I graduated from Cedar Crest College in May 2019 with a Bachelor of Science in Environmental Conservation and a Bachelor of Arts in New Media. I also graduated from a 6 month course from the University of North Carolina at Chapel Hill with a certificate in Full-Stack Development. I am one class away from completing a graduate certificate in Fisheries Management from Oregon State University.
                         <br/><br/>
-                        I am an organized, hard-working individual.
+                        I am an organized, hard-working, dependable individual. I am very passionate about being creative and problem-solving. 
                     </p>
 
                     <a href='#contact' className='btn contact_btn'>

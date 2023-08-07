@@ -1,5 +1,4 @@
 import "./navigation.css";
-// import navLogo from '../../assets/my-logo-black.png'
 import { Link, useLocation } from "react-router-dom";
 
 function Navigation() {
@@ -7,9 +6,6 @@ function Navigation() {
 
   return (
     <div id="navigation">
-      {/* <a href="#" className="footer_logo">
-        <img src={navLogo} alt="image of my logo" />
-      </a> */}
 
       <ul className="nav nav-tabs">
         <li className="nav-item">
@@ -33,7 +29,7 @@ function Navigation() {
         <li className="nav-item">
           <Link
             to="/Experience"
-            className={currentPage === "/Blog" ? "nav-link active" : "nav-link"}
+            className={currentPage === "/Experience" ? "nav-link active" : "nav-link"}
           >
             Experience
           </Link>
@@ -52,7 +48,7 @@ function Navigation() {
           <Link
             to="/Services"
             className={
-              currentPage === "/Contact" ? "nav-link active" : "nav-link"
+              currentPage === "/Services" ? "nav-link active" : "nav-link"
             }
           >
             Services

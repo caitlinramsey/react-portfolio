@@ -5,11 +5,11 @@
 }
 
 #about_me {
-  width: 100%;
+  width: 100vw;
+  height: 90rem;
   aspect-ratio: 1;
-  border-radius: 2rem;
+  margin-left: -1rem;
   padding-top: 1rem;
-  margin-top: 1rem;
   background: linear-gradient(
     45deg,
     transparent,
@@ -20,21 +20,27 @@
 
 #about_me > h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 .about_me_container {
   display: grid;
   grid-template-columns: 50% 50%;
-  gap: 15%;
+  gap: 10%;
   margin-bottom: 2rem;
 }
 
 .about_me_image {
+  background-image: url('../../assets/me-and-boys.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 70rem;
   border-radius: 2rem;
   overflow: hidden;
-  object-fit: contain;
-  margin: 1rem;
+  margin: 2rem;
+  margin-left: 6rem;
 }
 
 .about_me_content {
