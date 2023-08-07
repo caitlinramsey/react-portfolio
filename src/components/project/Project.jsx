@@ -1,6 +1,6 @@
 import React from 'react';
 import './project.css';
-import project1 from '../../assets/zooquarium.png';
+import project1 from '../../assets/zooquarium.jpg';
 import project2 from '../../assets/borrowhood-mockup.png';
 import project3 from '../../assets/weather-forecast.png';
 import project4 from '../../assets/note-taker.png';

@@ -7,16 +7,17 @@
 
 #project > h1 {
     text-align: center;
-    font-size: 2rem;
-    padding-top: 2rem;
+    font-size: 4rem;
 }
 
 .project_container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 2rem;
   justify-content: center;
   padding-bottom: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .project_item {
@@ -35,6 +36,11 @@
 .project_item-image {
   border-radius: 1rem;
   overflow: hidden;
+  height: 30rem;
+}
+
+.project_item-image img {
+  height: 30rem;
 }
 
 .project_item h3 {
