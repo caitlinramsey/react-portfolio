@@ -1,6 +1,6 @@
 import React from 'react';
 import "./header.css";
-import Resume from './Resume';
+import Resume from '../home/Resume';
 
 function Header () {
     return (

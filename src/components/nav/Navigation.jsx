@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 // import { useState } from 'react';
 import './navigation.css';
 // import {BiHomeAlt, BiUser, BiCodeCurly, BiSolidContact} from 'react-icons/bi';
@@ -20,33 +20,68 @@ import './navigation.css';
 //     )
 // }
 
-function Navigation(props) {
-    const tabs = ['About', 'Experience', 'Portfolio', 'Services', 'Contact'];
-    return (
-        <div className="tabs">
-      <ul className="nav nav-tabs">
-        {tabs.map((tab) => (
-          <li
-            className={
-              props.currentPage === tab ? "nav-item is-active" : "nav-item"
-            }
-            key={tab}
-          >
-            <a
-              href={"#" + tab.toLowerCase()}
-              // Whenever a tab is clicked on,
-              // the current page is set through the handlePageChange props.
-              onClick={() => props.handlePageChange(tab)}
-              className={
-                props.currentPage === tab ? "nav-link active" : "nav-link"
-              }
-            >
-              {tab}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
+import { Link, useLocation } from 'react-router-dom';
+
+function Navigation() {
+  const currentPage = useLocation().pathname;
+
+  return (
+    <ul className="nav nav-tabs">
+      <li className="nav-item">
+        <Link
+          to="/"
+          
+          className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+        >
+          Home
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/About"
+          
+          className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}
+        >
+          About
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/Experience"
+         
+          className={currentPage === '/Blog' ? 'nav-link active' : 'nav-link'}
+        >
+          Experience
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/Project"
+     
+          className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+        >
+          Portfolio
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/Services"
+     
+          className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+        >
+          Services
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/Contact"
+     
+          className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+        >
+          Contact
+        </Link>
+      </li>
+    </ul>
   );
 }
 
