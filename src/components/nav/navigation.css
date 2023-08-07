@@ -3,16 +3,22 @@
   --nav-hover: hotpink;
 }
 
+#navigation {
+  background-color: var(--nav-hover);
+}
+
 .nav-tabs {
   text-align: center;
   font-size: 1.5rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   min-width: 100vw;
+  padding: 0;
 }
 
 .nav-tabs li {
   list-style: none;
+  /* margin-top: 10rem; */
 }
 
 .nav-tabs a:hover {
@@ -29,6 +35,7 @@
   .nav-tabs {
     padding: 0px;
   }
+
 }
 
 /* ----- SMALL MEDIA QUERY ----- */

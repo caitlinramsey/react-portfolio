@@ -16,13 +16,6 @@
   color: var(--color-bg);
 }
 
-.footer_logo {
-  width: 10%;
-  /* opacity: 0.5; */
-  margin-bottom: 1rem;
-  display: inline-block;
-}
-
 .pageLinks {
   display: flex;
   flex-wrap: wrap;

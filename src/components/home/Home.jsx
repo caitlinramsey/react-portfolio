@@ -1,6 +1,7 @@
 import Resume from "./Resume";
 import "./home.css";
 import background from '../../assets/jaguar.jpg'
+import navLogo from '../../assets/my-logo-black.png'
 
 export default function Home() {
   return (
@@ -18,7 +19,13 @@ export default function Home() {
         <h1>Caitlin Ramsey</h1>
         <h4>Full-Stack Developer/Graphic Designer/Photographer</h4>
         <Resume />
+
+        <a href="#" className="my_logo">
+        <img src={navLogo} alt="image of my logo" />
+      </a>
+      
       </div>
+
     </header>
     </div>
   );

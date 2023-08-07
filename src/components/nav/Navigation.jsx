@@ -1,5 +1,5 @@
 import "./navigation.css";
-import { navLogo } from '../../assets/my-logo.png'
+// import navLogo from '../../assets/my-logo-black.png'
 import { Link, useLocation } from "react-router-dom";
 
 function Navigation() {
@@ -7,9 +7,9 @@ function Navigation() {
 
   return (
     <div id="navigation">
-      <a href="#" className="footer_logo">
+      {/* <a href="#" className="footer_logo">
         <img src={navLogo} alt="image of my logo" />
-      </a>
+      </a> */}
 
       <ul className="nav nav-tabs">
         <li className="nav-item">
