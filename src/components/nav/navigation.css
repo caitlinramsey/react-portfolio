@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --nav-background: pink;
     --nav-icons: black;
     --nav-hover: grey;
@@ -43,4 +43,22 @@ nav a {
       padding: 0.5rem 1.5rem;
       gap: 0.5rem;
     }
-  }
+  } */
+
+:root {
+  --nav-text: black;
+}
+
+.tabs {
+  text-align: center;
+}
+
+.tabs li {
+  list-style: none;
+  display: inline;
+}
+
+.tabs a {
+  text-decoration: none;
+  color: var(--nav-text);
+}
