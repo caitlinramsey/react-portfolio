@@ -23,8 +23,16 @@
   color: var(--nav-text);
 }
 
-.h_line {
-  width: 100%;
-  height: 1px;
-  background: var(--nav-text);
+/* ----- MEDIUM MEDIA QUERY ----- */
+@media screen and (max-width: 1024px) {
+  .nav-tabs {
+    padding: 0px;
+  }
+}
+
+/* ----- SMALL MEDIA QUERY ----- */
+@media screen and (max-width: 600px) {
+  .nav-tabs {
+    display: block;
+  }
 }

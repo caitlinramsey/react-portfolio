@@ -1,18 +1,16 @@
 import Resume from "./Resume";
 import "./home.css";
 import background from '../../assets/jaguar.jpg'
-// import React from 'react';
 
 export default function Home() {
   return (
     <div style={{
       backgroundImage: `url(${background})`,
       backgroundRepeat: 'no-repeat',
-      height: '1000px',
-      backgroundPosition: '5px',
+      height: '80vh',
+      backgroundPosition: '-400px',
       backgroundSize: '3000px',
-      margin: '0px',
-      opacity: '0.6'
+      margin: '-10px',
     }}>
     <header id="header">
       <div className="container header_container">

@@ -16,6 +16,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 
 .project_item {

@@ -5,6 +5,10 @@
     --experience-text: black;
 }
 
+#experience {
+  min-height: 80vh;
+}
+
 #experience > h3 {
     text-align: center;
     font-size: 2rem;    
@@ -21,6 +25,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  padding-bottom: 2rem;
 }
 
 .experience_container > div {

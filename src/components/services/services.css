@@ -4,6 +4,10 @@
     --hover: orchid;
 }
 
+#services {
+  min-height: 80vh;
+}
+
 #services > h1 {
     text-align: center;
     font-size: 2rem;
@@ -13,6 +17,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
+  padding-bottom: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem
 }
 
 .service {
@@ -76,5 +83,7 @@
     .services_container {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
   }

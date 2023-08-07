@@ -62,7 +62,6 @@ function Navigation() {
         </Link>
       </li>
     </ul>
-
   );
 }
 

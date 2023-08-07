@@ -5,13 +5,12 @@
 #footer {
   background: var(--footer-background);
   padding-top: 1.6rem;
-  padding-bottom: 3rem;
   text-align: center;
   font-size: 0.9rem;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   position: absolute;
   left: 0;
-  bottom: 0;
+  /* bottom: 0; */
   width: 100%;
 }
 
@@ -61,9 +60,9 @@
 }
 
 .copyright {
-  margin-bottom: -2rem;
+  /* margin-bottom: -2rem; */
   padding-top: 1rem;
-  padding-bottom: 0.2rem;
+  padding-bottom: 1rem;
   color: var(--color-light);
   transition: var(--transition);
   font-size: 1.3rem;
@@ -85,6 +84,7 @@
   .pageLinks {
     flex-direction: column;
     gap: 1rem;
+    padding: 0px;
   }
 
 
