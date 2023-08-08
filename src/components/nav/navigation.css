@@ -36,6 +36,11 @@
   font-family: "Preahvihear", sans-serif;
 }
 
+.active {
+  color: var(--nav-hover) !important;
+  text-decoration: underline !important;
+}
+
 @media screen and (max-width: 1024px) {
   .nav-tabs {
     padding: 0px;

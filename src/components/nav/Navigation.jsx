@@ -1,18 +1,22 @@
 import "./navigation.css";
 import { Link, useLocation } from "react-router-dom";
 
-function Navigation({ currentPage, handlePageChange }) {
-  // const currentPage = useLocation().pathname;
+function Navigation() {
+  const current = useLocation();
+
+  const currentPage = current.pathname.slice(1);
+  console.log(currentPage);
+
+  console.log(currentPage === "Home");
 
   return (
     <div id="navigation">
-
       <ul className="nav nav-tabs">
         <li className="nav-item">
           <Link
             to="/Home"
-            onClick={() => handlePageChange('Home')}
-            className={currentPage === "/" ? "nav-link active" : "nav-link"}
+            onClick={() => handlePageChange("Home")}
+            className={currentPage === "Home" ? "active" : "nav-link"}
           >
             Home
           </Link>
@@ -20,10 +24,8 @@ function Navigation({ currentPage, handlePageChange }) {
         <li className="nav-item">
           <Link
             to="/"
-            onClick={() => handlePageChange('About')}
-            className={
-              currentPage === "/About" ? "nav-link active" : "nav-link"
-            }
+            onClick={() => handlePageChange("About")}
+            className={currentPage === "About" ? "active" : "nav-link"}
           >
             About
           </Link>
@@ -31,8 +33,8 @@ function Navigation({ currentPage, handlePageChange }) {
         <li className="nav-item">
           <Link
             to="/Experience"
-            onClick={() => handlePageChange('Experience')}
-            className={currentPage === "/Experience" ? "nav-link active" : "nav-link"}
+            onClick={() => handlePageChange("Experience")}
+            className={currentPage === "Experience" ? "active" : "nav-link"}
           >
             Experience
           </Link>
@@ -40,10 +42,8 @@ function Navigation({ currentPage, handlePageChange }) {
         <li className="nav-item">
           <Link
             to="/Project"
-            onClick={() => handlePageChange('Project')}
-            className={
-              currentPage === "/Contact" ? "nav-link active" : "nav-link"
-            }
+            onClick={() => handlePageChange("Project")}
+            className={currentPage === "Project" ? "active" : "nav-link"}
           >
             Portfolio
           </Link>
@@ -51,10 +51,8 @@ function Navigation({ currentPage, handlePageChange }) {
         <li className="nav-item">
           <Link
             to="/Services"
-            onClick={() => handlePageChange('Services')}
-            className={
-              currentPage === "/Services" ? "nav-link active" : "nav-link"
-            }
+            onClick={() => handlePageChange("Services")}
+            className={currentPage === "Services" ? "active" : "nav-link"}
           >
             Services
           </Link>
@@ -62,10 +60,8 @@ function Navigation({ currentPage, handlePageChange }) {
         <li className="nav-item">
           <Link
             to="/Contact"
-            onClick={() => handlePageChange('Contact')}
-            className={
-              currentPage === "/Contact" ? "nav-link active" : "nav-link"
-            }
+            onClick={() => handlePageChange("Contact")}
+            className={currentPage === "Contact" ? "active" : "nav-link"}
           >
             Contact
           </Link>
