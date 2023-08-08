@@ -6,7 +6,7 @@ const Resume = () => {
     return (
         <div className='resume'>
             <a href={ResumeFile} download className='btn_resume'>Resume</a>
-            <a href='#contact' className='btn_contact'>Contact</a>
+            <a href='./Contact' className='btn_contact'>Contact</a>
         </div>
     )
 }

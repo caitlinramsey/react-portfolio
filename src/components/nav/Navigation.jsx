@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 function Navigation() {
   const current = useLocation();
 
-  const currentPage = current.pathname.slice(1);
+  const currentPage = current.pathname === '/' ? 'About' : current.pathname.slice(1);
   console.log(currentPage);
 
   console.log(currentPage === "Home");
