@@ -1,8 +1,8 @@
 import "./navigation.css";
 import { Link, useLocation } from "react-router-dom";
 
-function Navigation() {
-  const currentPage = useLocation().pathname;
+function Navigation({ currentPage, handlePageChange }) {
+  // const currentPage = useLocation().pathname;
 
   return (
     <div id="navigation">
@@ -10,7 +10,8 @@ function Navigation() {
       <ul className="nav nav-tabs">
         <li className="nav-item">
           <Link
-            to="/"
+            to="/Home"
+            onClick={() => handlePageChange('Home')}
             className={currentPage === "/" ? "nav-link active" : "nav-link"}
           >
             Home
@@ -18,7 +19,8 @@ function Navigation() {
         </li>
         <li className="nav-item">
           <Link
-            to="/About"
+            to="/"
+            onClick={() => handlePageChange('About')}
             className={
               currentPage === "/About" ? "nav-link active" : "nav-link"
             }
@@ -29,6 +31,7 @@ function Navigation() {
         <li className="nav-item">
           <Link
             to="/Experience"
+            onClick={() => handlePageChange('Experience')}
             className={currentPage === "/Experience" ? "nav-link active" : "nav-link"}
           >
             Experience
@@ -37,6 +40,7 @@ function Navigation() {
         <li className="nav-item">
           <Link
             to="/Project"
+            onClick={() => handlePageChange('Project')}
             className={
               currentPage === "/Contact" ? "nav-link active" : "nav-link"
             }
@@ -47,6 +51,7 @@ function Navigation() {
         <li className="nav-item">
           <Link
             to="/Services"
+            onClick={() => handlePageChange('Services')}
             className={
               currentPage === "/Services" ? "nav-link active" : "nav-link"
             }
@@ -57,6 +62,7 @@ function Navigation() {
         <li className="nav-item">
           <Link
             to="/Contact"
+            onClick={() => handlePageChange('Contact')}
             className={
               currentPage === "/Contact" ? "nav-link active" : "nav-link"
             }
