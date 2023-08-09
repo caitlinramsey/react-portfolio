@@ -68,18 +68,27 @@
   color: var(--project-text);
 }
 
-/* ----- MEDIUM MEDIA QUERY ----- */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   .project_container {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.15rem;
+    display: block;
+    width: 50vw;
+    
+  }
+
+  .project_item {
+    margin-bottom: 1rem;
   }
 }
 
-/* ----- SMALL MEDIA QUERY ----- */
+@media screen and (max-width: 1024px) {
+  .project_container {
+    width: 80vw;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .project_container {
-    grid-template-columns: 1fr;
+    padding: 0;
   }
 
   .project_item {
