@@ -64,14 +64,16 @@
   color: var(--color-white);
 }
 
-/* ----- MEDIUM MEDIA QUERY ----- */
 @media screen and (max-width: 1024px) {
+  #footer {
+    width: 105vw;
+  }
+
   .footer_logo {
     width: 20%;
   }
 }
 
-/* ----- SMALL MEDIA QUERY ----- */
 @media screen and (max-width: 600px) {
   .pageLinks {
     flex-direction: column;
@@ -86,7 +88,6 @@
 
 }
 
-/* ----- XSMALL MEDIA QUERY ----- */
 @media screen and (max-width: 400px) {
   .footer_logo {
     width: 25%;
