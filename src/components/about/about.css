@@ -166,16 +166,27 @@
 
   .about_me_image {
     height: 30rem;
+    margin-left: 4rem;
   }
 }
 
 @media screen and (max-width: 375px) {
   #about_me {
-    margin-left: -1rem;
     padding-bottom: 45rem;
   }
 
   .about_me_image {
     height: 25rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #about_me {
+    padding-bottom: 75rem;
+  }
+
+  .about_me_image {
+    height: 25rem;
+    margin-left: 3rem;
   }
 }
