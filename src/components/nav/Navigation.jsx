@@ -59,6 +59,15 @@ function Navigation() {
         </li>
         <li className="nav-item">
           <Link
+            to="/ResumePage"
+            onClick={() => handlePageChange("ResumePage")}
+            className={currentPage === "ResumePage" ? "active" : "nav-link"}
+          >
+            Resume
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link
             to="/Contact"
             onClick={() => handlePageChange("Contact")}
             className={currentPage === "Contact" ? "active" : "nav-link"}
