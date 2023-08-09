@@ -20,7 +20,8 @@ export default function Home() {
         <h4>Full-Stack Developer/Graphic Designer/Photographer</h4>
         <Resume />
 
-        <a href="#" className="my_logo">
+        <h3>Want to see my photography and design? Click the logo.</h3>
+        <a href="https://www.caitlinrdesign.com" className="my_logo">
         <img src={navLogo} alt="image of my logo" />
       </a>
       
