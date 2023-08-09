@@ -24,7 +24,7 @@ This application is meant to be used by anyone who would like a reliable place t
 This is what it looks like on a larger screen:
 <br />
 <img alt="Screen Shot the Just Another Text Editor" src="./src/assets/site-ss-web.jpg">
-<br />
+
 This is what it looks like on a mobile device:
 <br />
 <br />
