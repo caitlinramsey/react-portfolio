@@ -4,6 +4,7 @@
   --submit-fill: pink;
   --submit-text: black;
   --submit-border: deeppink;
+  --submit-error: red;
 }
 
 #contact > h1 {
@@ -95,6 +96,10 @@ textarea::placeholder {
   color: var(--submit-text);
   font-family: "Preahvihear", sans-serif;
   font-size: 1rem;
+}
+
+.error_message {
+  color: var(--submit-error);
 }
 
 #submit_btn {

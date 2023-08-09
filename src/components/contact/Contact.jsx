@@ -1,10 +1,48 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './contact.css';
 import { HiOutlineMail } from 'react-icons/hi';
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import background from '../../assets/red-panda.jpg'
+import { validateEmail } from '../../utils/helpers';
+import { useForm, ValidationError } from '@formspree/react';
+// require('dotenv').config()
+import 'dotenv/config'
 
 function Contact() {
+    const [state, handleSubmit] = useForm(process.env.REACT_APP_FORM_ID);
+    const [formState, setFormState] = useState({ name: '', email: '', message: ''});
+    const [errorMessage, setErrorMessage] = useState('');
+    const { name, email, message } = formState;
+
+    if (state.succeeded) {
+        return (
+            <div>
+                <p>Thank you for reaching out!</p>
+            </div>
+        );
+    }
+
+    const handleChange = (e) => {
+        if (e.target.name === 'email') {
+            const isValid = validateEmail(e.target.value);
+            if (!isValid) {
+                setErrorMessage('Invalid email address!');
+            } else {
+                setErrorMessage('');
+            }
+        } else {
+            if (!e.target.value.length) {
+                setErrorMessage(`A ${e.target.name} is required.`);
+            } else {
+                setErrorMessage('');
+            }
+        }
+        if (!errorMessage) {
+            setFormState({ ...formState, [e.target.name]: e.target.value });
+            console.log('Handle Form', formState);
+        }
+    };
+
     return (
         <div style={{
             backgroundImage: `url(${background})`,
@@ -42,25 +80,36 @@ function Contact() {
                     </article>
                 </div>
 
-                <form>
-                    <input
+                <form id='contact_form' onSubmit={handleSubmit}>
+                    <input className='input'
                         type='text'
                         name='name'
+                        defaultValue={name}
+                        onBlur={handleChange}
                         placeholder='Please enter your first and last name'
                         required
                     />
                     <input
                         type='email'
                         name='email'
+                        defaultValue={email}
+                        onBlur={handleChange}
                         placeholder='Please enter your email address'
                         required
                     />
                     <textarea
                         type='message'
                         rows='8'
+                        defaultValue={message}
+                        onBlur={handleChange}
                         placeholder='Please enter your message here'
                         required
                     ></textarea>
+                    {errorMessage && (
+                        <div>
+                            <p className='error_message'>{errorMessage}</p>
+                        </div>
+                    )}
                     <button type='submit' id='submit_btn' className='btn'>
                         Submit
                     </button>
