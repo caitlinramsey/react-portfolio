@@ -21,9 +21,14 @@ The user can navigate [here](https://caitlinrcreations.netlify.app/) to view my 
 This application is meant to be used by anyone who would like a reliable place to store notes and code snippets.
 
 ## Mockup
-<img width="1000" alt="Screen Shot the Just Another Text Editor" src="./Assets/site-ss-web.jpg">
-
-<img width="1000" alt="Screen Shot the Just Another Text Editor" src="./Assets/site-ss-web.jpg">
+This is what it looks like on a larger screen:
+<br />
+<img alt="Screen Shot the Just Another Text Editor" src="./src/assets/site-ss-web.jpg">
+<br />
+This is what it looks like on a mobile device:
+<br />
+<br />
+<img alt="Screen Shot the Just Another Text Editor" src="./src/assets/site-ss-mobile.jpg">
 
 ## Contributing
 Please email me to discuss contributing.
