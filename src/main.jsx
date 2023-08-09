@@ -9,6 +9,7 @@ import Project from './components/project/Project';
 import Services from './components/services/Services';
 import ResumePage from './components/resume/ResumePage';
 import Contact from './components/contact/Contact';
+import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
   {
@@ -59,3 +60,5 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
 );
+
+reportWebVitals();
