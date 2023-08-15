@@ -17,8 +17,8 @@ function Footer () {
             <div className='socialLinks'>
                 <a href='https://github.com/caitlinramsey' target='blank'><AiFillGithub/></a>
                 <a href='https://www.linkedin.com/in/caitlin-ramsey/' target='blank'><AiFillLinkedin/></a>
-                <a href='https://www.facebook.com/caitlinramseydesignphotography' target='blank'><AiFillFacebook/></a>
-                <a href='https://www.instagram.com/caitlinramseydesignphotography/' target='blank'><AiOutlineInstagram/></a>
+                <a href='https://www.facebook.com/doubledowncreationsus' target='blank'><AiFillFacebook/></a>
+                <a href='https://www.instagram.com/doubledowncreations/' target='blank'><AiOutlineInstagram/></a>
             </div>
 
             <div className='copyright'>

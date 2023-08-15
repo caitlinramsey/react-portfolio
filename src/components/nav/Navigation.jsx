@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 function Navigation() {
   const current = useLocation();
 
-  const currentPage = current.pathname === '/' ? 'About' : current.pathname.slice(1);
+  const currentPage = current.pathname === '/' ? 'Home' : current.pathname.slice(1);
   console.log(currentPage);
 
   console.log(currentPage === "Home");
@@ -14,7 +14,7 @@ function Navigation() {
       <ul className="nav nav-tabs">
         <li className="nav-item">
           <Link
-            to="/Home"
+            to="/"
             onClick={() => handlePageChange("Home")}
             className={currentPage === "Home" ? "active" : "nav-link"}
           >
@@ -23,7 +23,7 @@ function Navigation() {
         </li>
         <li className="nav-item">
           <Link
-            to="/"
+            to="/About"
             onClick={() => handlePageChange("About")}
             className={currentPage === "About" ? "active" : "nav-link"}
           >
@@ -55,15 +55,6 @@ function Navigation() {
             className={currentPage === "Services" ? "active" : "nav-link"}
           >
             Services
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link
-            to="/ResumePage"
-            onClick={() => handlePageChange("ResumePage")}
-            className={currentPage === "ResumePage" ? "active" : "nav-link"}
-          >
-            Resume
           </Link>
         </li>
         <li className="nav-item">

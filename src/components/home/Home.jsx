@@ -21,7 +21,7 @@ export default function Home() {
         <Resume />
 
         <h3>Want to see my photography and design? Click the logo.</h3>
-        <a href="https://www.caitlinrdesign.com" className="my_logo">
+        <a href="https://doubledowncreations.com/" className="my_logo">
         <img src={navLogo} alt="image of my logo" />
       </a>
       

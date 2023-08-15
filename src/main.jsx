@@ -7,7 +7,6 @@ import About from './components/about/About';
 import Experience from './components/experience/Experience';
 import Project from './components/project/Project';
 import Services from './components/services/Services';
-import ResumePage from './components/resume/ResumePage';
 import Contact from './components/contact/Contact';
 import reportWebVitals from './reportWebVitals';
 
@@ -17,20 +16,12 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <Error />,
     children: [
-      // {
-      //   index: true,
-      //   element: <Home />,
-      // },
-      // {
-      //   path: '/About',
-      //   element: <About />,
-      // },
       {
-        path: '/Home',
+        index: true,
         element: <Home />,
       },
       {
-        index: true,
+        path: '/About',
         element: <About />,
       },
       {
@@ -44,10 +35,6 @@ const router = createBrowserRouter([
       {
         path: '/Services',
         element: <Services />,
-      },
-      {
-        path: '/ResumePage',
-        element: <ResumePage />,
       },
       {
         path: '/Contact',
