@@ -76,4 +76,4 @@ GitHub: https://github.com/caitlinramsey/react-portfolio
 Email: caitlinramsey@outlook.com
 
 ## Deployed Application
-The deployed application can viewed [here](https://caitlinrcreations.netlify.app/).
+The deployed application can viewed [here](https://doubledowncreations.netlify.app).
