@@ -22,7 +22,7 @@ function Footer () {
             </div>
 
             <div className='copyright'>
-                <small>&copy; Caitlin Ramsey Design & Photography 2023</small>
+                <small>&copy; Double Down Creations 2023</small>
             </div>
         </footer>
     )
