@@ -12,8 +12,8 @@ const projectInfo = [
         id: 1,
         image: project1,
         title: 'Zooquarium',
-        github: 'https://github.com/caitlinramsey/zoos-and-aquariums',
-        demo: 'https://caitlinramsey.github.io/zoos-and-aquariums/',
+        github: 'https://github.com/caitlinramsey/zooquarium',
+        demo: 'https://caitlinramsey.github.io/zooquarium/',
     },
     {
         id: 2,
