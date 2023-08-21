@@ -65,12 +65,6 @@
   border-color: var(--submit-border);
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-
 input::placeholder {
   color: var(--submit-text);
   font-family: "Preahvihear", sans-serif;
@@ -96,24 +90,6 @@ textarea::placeholder {
   color: var(--submit-text);
   font-family: "Preahvihear", sans-serif;
   font-size: 1rem;
-}
-
-.error_message {
-  color: var(--submit-error);
-}
-
-#submit_btn {
-  width: 15rem;
-  font-size: 1.3rem;
-  background-color: var(--submit-background);
-  padding: 0.7rem;
-  border-radius: 1rem;
-  font-family: "Preahvihear", sans-serif;
-}
-
-#submit_btn:hover {
-  background-color: var(--submit-fill);
-  cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) {
