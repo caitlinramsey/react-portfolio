@@ -1,10 +1,10 @@
 import React from 'react';
 import './project.css';
 import project1 from '../../assets/zooquarium.jpg';
-import project2 from '../../assets/borrowhood-mockup.png';
+import project2 from '../../assets/bugbytes.jpg';
 import project3 from '../../assets/weather-forecast.png';
 import project4 from '../../assets/note-taker.png';
-import project5 from '../../assets/horse-knowledge-quiz.png';
+import project5 from '../../assets/borrowhood-mockup.png';
 import project6 from '../../assets/workday-scheduler.png';
 
 const projectInfo = [
@@ -18,9 +18,9 @@ const projectInfo = [
     {
         id: 2,
         image: project2,
-        title: 'Borrowhood',
-        github: 'https://github.com/skywalkah/borrowhood',
-        demo: 'https://polar-beach-65067-18b2f94f915d.herokuapp.com/',
+        title: 'BUGbytes',
+        github: 'https://github.com/HarrisSte/BUGbytes',
+        demo: 'https://bugbytes-eea33095845f.herokuapp.com/',
     },
     {
         id: 3,
@@ -39,9 +39,9 @@ const projectInfo = [
     {
         id: 5,
         image: project5,
-        title: 'Horse Knowledge Quiz',
-        github: 'https://github.com/caitlinramsey/coding-quiz',
-        demo: 'https://caitlinramsey.github.io/coding-quiz/',
+        title: 'Borrowhood',
+        github: 'https://github.com/skywalkah/borrowhood',
+        demo: 'https://polar-beach-65067-18b2f94f915d.herokuapp.com//',
     },
     {
         id: 6,
