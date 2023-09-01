@@ -9,6 +9,7 @@ import Project from './components/project/Project';
 import Services from './components/services/Services';
 import Contact from './components/contact/Contact';
 import reportWebVitals from './reportWebVitals';
+import Error from '../src/components/error/Error'
 
 const router = createBrowserRouter([
   {

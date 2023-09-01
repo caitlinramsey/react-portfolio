@@ -51,17 +51,17 @@
   border: 1px solid transparent;
 }
 
+.socialLinks a:hover {
+  background-color: white;
+}
+
 .copyright {
-  /* margin-bottom: -2rem; */
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: var(--color-light);
   transition: var(--transition);
   font-size: 1.3rem;
-}
-
-.copyright:hover {
-  color: var(--color-white);
+  font-family: "Preahvihear", sans-serif;
 }
 
 @media screen and (max-width: 1024px) {

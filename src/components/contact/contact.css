@@ -1,6 +1,6 @@
 :root {
   --submit-background: hotpink;
-  --submit-hover: orchid;
+  --submit-hover: #F0FFFF;
   --submit-fill: pink;
   --submit-text: black;
   --submit-border: deeppink;
@@ -57,12 +57,28 @@
   padding: 1rem;
   border-radius: 0.5rem;
   font-family: "Preahvihear", sans-serif;
-  font-size: 1rem;
 }
 
 .contact_option a:hover {
   background-color: var(--submit-hover);
   border-color: var(--submit-border);
+}
+
+.contact-submit {
+   margin-top: 0.5rem;
+  display: inline-block;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--submit-text);
+  background-color: var(--submit-background);
+  padding: .8rem;
+  border-radius: 0.5rem;
+  font-family: "Preahvihear", sans-serif;
+}
+
+.contact-submit:hover {
+  background-color: var(--submit-hover);
+  cursor: pointer;
 }
 
 input::placeholder {

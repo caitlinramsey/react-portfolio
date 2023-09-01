@@ -6,13 +6,6 @@ import { AiFillFacebook, AiOutlineInstagram, AiFillGithub, AiFillLinkedin } from
 function Footer () {
     return (
         <footer id='footer'>
-            {/* <ul className='pageLinks'>
-                <li><a href='#'>Home</a></li>
-                <li><a href='#about'>About Me</a></li>
-                <li><a href='#experience'>Experience</a></li>
-                <li><a href='#portfolio'>Portfolio</a></li>
-                <li><a href='#contact'>Contact</a></li>
-            </ul> */}
 
             <div className='socialLinks'>
                 <a href='https://github.com/caitlinramsey' target='blank'><AiFillGithub/></a>
