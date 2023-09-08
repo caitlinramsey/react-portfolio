@@ -17,22 +17,11 @@
   color: var(--color-bg);
 }
 
-.pageLinks {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin: 0 auto 1rem;
-}
-
-.pageLinks > li {
-    list-style: none;
-}
-
-.pageLinks li a {
-    text-decoration: none;
-    font-size: 1.1rem;
-}
+/* .my_logo {
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  max-width: 100vw;
+} */
 
 .socialLinks {
   display: flex;

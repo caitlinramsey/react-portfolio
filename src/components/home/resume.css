@@ -4,6 +4,13 @@
   --resume-hover: orchid;
 }
 
+.resume {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
 .btn_resume,
 .btn_contact {
   background-color: var(--resume);
