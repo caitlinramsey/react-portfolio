@@ -1,16 +1,15 @@
 :root {
   --about-btn: hotpink;
   --about-text: black;
-  --about-hover: orchid;
   --about-background: pink;
+  --about-hover: white;
 }
 
-#about_me {
+#about-me {
   width: 100vw;
   height: 90rem;
   aspect-ratio: 1;
   margin-left: -1rem;
-  padding-top: 1rem;
   background: linear-gradient(
     45deg,
     transparent,
@@ -19,43 +18,42 @@
   );
 }
 
-#about_me h1 {
-  text-align: center;
+#about-me h1 {
   font-size: 4rem;
   font-family: "Borel", cursive;
 }
 
-.about_me_container {
+.about-me-container {
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 10%;
   margin-bottom: 2rem;
 }
 
-.about_me_image {
+.about-me-image {
   background-image: url("../../assets/me-and-boys.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 90%;
-  height: 70rem;
+  height: 60rem;
   border-radius: 2rem;
   overflow: hidden;
   margin: 2rem;
   margin-left: 6rem;
 }
 
-.about_me_content {
+.about-me-content {
   width: 50%;
   font-size: 1.5rem;
 }
 
-.about_me_content p {
+.about-me-content p {
   margin: 2rem 0 2.6rem;
-  font-family: "Borel", cursive;
+  font-family: "Valera Round", sans-serif;
 }
 
-.about_btn {
+.about-btn {
   background-color: var(--about-background);
   text-decoration: none;
   color: var(--about-text);
@@ -65,91 +63,92 @@
   font-weight: 400;
 }
 
-.about_btn:hover {
-  background-color: var(--about-hover);
+.about-btn:hover {
+  background-color: var(--about-text);
+  color: var(--about-hover);
 }
 
 @media screen and (max-width: 1024px) {
-  #about_me {
+  #about-me {
     margin-left: -1rem;
     padding-bottom: 35rem;
     width: 105vw;
   }
 
-  #about_me h1 {
+  #about-me h1 {
     margin-bottom: -1rem;
   }
 
-  .about_me_container {
+  .about-me-container {
     grid-template-columns: 1fr;
     gap: 0;
   }
 
-  .about_me {
+  .about-me {
     width: 80%;
   }
 
-  .about_me_image {
+  .about-me-image {
     height: 50rem;
     margin-left: 10rem;
   }
 
-  .about_me_content {
+  .about-me-content {
     text-align: center;
     width: 100%;
   }
 
-  .about_me_content p {
+  .about-me-content p {
     padding-left: 3rem;
     padding-right: 3rem;
     text-align: center;
   }
 
-  .about_btn {
+  .about-btn {
     background-color: var(--about-btn);
   }
 }
 
 @media screen and (max-width: 768px) {
-  #about_me {
+  #about-me {
     margin-left: -1rem;
     padding-bottom: 10rem;
   }
 
-  .about_me_image {
+  .about-me-image {
     height: 40rem;
   }
 
-  .about_btn {
+  .about-btn {
     background-color: var(--about-btn);
   }
 }
 
 @media screen and (max-width: 600px) {
-  #about_me {
+  #about-me {
     margin-left: -1rem;
     padding-bottom: 40rem;
   }
 
-  .about_me_container {
+  .about-me-container {
     grid-template-columns: 1fr;
     gap: 0;
   }
 
-  .about_me {
+  .about-me {
     width: 80%;
   }
 
-  .about_me_image {
+  .about-me-image {
     height: 40rem;
   }
 
-  .about_me_content {
+  .about-me-content {
     text-align: center;
     width: 100%;
   }
 
-  .about_me_content p {
+  .about-me-content p {
     padding-left: 3rem;
     padding-right: 3rem;
     text-align: center;
@@ -157,37 +156,33 @@
 }
 
 @media screen and (max-width: 425px) {
-  #about_me {
+  #about-me {
     margin-left: -1rem;
-    padding-bottom: 35rem;
+    padding-bottom: 95rem;
   }
 
-  #about_me h1 {
+  #about-me h1 {
     font-size: 3rem;
   }
 
-  .about_me_image {
+  .about-me-image {
     height: 30rem;
     margin-left: 4rem;
   }
 }
 
 @media screen and (max-width: 375px) {
-  #about_me {
-    padding-bottom: 45rem;
-  }
-
-  .about_me_image {
+  .about-me-image {
     height: 25rem;
   }
 }
 
 @media screen and (max-width: 320px) {
-  #about_me {
-    padding-bottom: 75rem;
+  #about-me {
+    padding-bottom: 115rem;
   }
 
-  .about_me_image {
+  .about-me-image {
     height: 25rem;
     margin-left: 3rem;
   }

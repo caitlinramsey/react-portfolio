@@ -1,107 +1,101 @@
 :root {
-  --experience-background: pink;
+  --experience-background: black;
   --experience-border: deeppink;
   --experience-hover: hotpink;
-  --experience-text: black;
+  --experience-text: grey;
+  --experience-header: white;
+  --experience-gradient: rgb(80, 80, 80);
 }
 
 #experience {
   min-height: 80vh;
+  min-width: 100vw;
+  background: rgb(177,179,177);
+  background: linear-gradient(90deg, rgba(177,179,177,1) 0%, rgba(34,34,34,1) 25%, rgba(13,20,17,1) 50%, rgba(47,48,48,1) 75%, rgba(152,153,153,1) 100%);
+  margin-left: -1rem;
 }
 
 #experience > h3 {
-  text-align: center;
-  margin-bottom: -1rem;
+  color: var(--experience-header);
+  margin-bottom: -.5rem;
   font-size: 4rem;
   font-family: "Borel", cursive;
 }
 
 #experience > h4 {
-  text-align: center;
-  opacity: 0.6;
+  color: var(--experience-text);
+  opacity: 0.7;
   font-size: 1.3rem;
-  margin-top: 0;
-  margin-bottom: 2rem;
   font-family: "Preahvihear", sans-serif;
-  box-shadow: 3px 3px black;
+  box-shadow: 3px 3px rgb(183, 183, 183);
 }
 
-.experience_container {
+.experience-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  color: var(--experience-header);
 }
 
-.experience_container > div {
+.experience-container > div {
   background: var(--experience-background);
   padding: 2.4rem 5rem;
   border-radius: 2rem;
   border: 1px solid transparent;
 }
 
-.experience_container > div:hover {
-  background-color: var(--experience-hover);
-  border-color: var(--experience-border);
-  cursor: default;
-}
-
-.experience_container div h3 {
-  text-align: center;
-  margin-bottom: 2rem;
+.experience-container div h3 {
   font-family: "Borel", cursive;
 }
 
-.experience_frontend {
+.experience-frontend {
   font-size: 1.5rem;
 }
 
-.experience_details div h4 {
+.experience-details div h4 {
   font-weight: bolder;
   font-size: 1.3rem;
   font-family: "Preahvihear", sans-serif;
 }
 
-.experience_content {
+.experience-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 2rem;
 }
 
-.experience_details {
+.experience-details {
   display: flex;
   gap: 1rem;
 }
 
-.experience_details-icon {
+.experience-details-icon {
   margin-top: 2.1rem;
   color: var(--experience-text);
   font-size: 1.5rem;
 }
 
 .text-light {
-  opacity: 0.7;
+  opacity: 0.4;
   font-family: "Rubik", sans-serif;
 }
 
-.experience_backend {
+.experience-backend {
   font-size: 1.5rem;
 }
 
 @media screen and (max-width: 1024px) {
-  .experience_container {
+  .experience-container {
     grid-template-columns: 1fr;
   }
 
-  .experience_container > div {
+  .experience-container > div {
     width: 100%;
     padding: 0rem;
     margin: 0 auto;
   }
 
-  .experience_content {
+  .experience-content {
     padding: 1rem;
   }
 
@@ -111,11 +105,11 @@
 }
 
 @media screen and (max-width: 600px) {
-  .experience_container {
+  .experience-container {
     gap: 1rem;
   }
 
-  .experience_container > div {
+  .experience-container > div {
     padding: 0rem;
   }
 
