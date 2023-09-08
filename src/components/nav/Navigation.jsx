@@ -1,5 +1,8 @@
 import "./navigation.css";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 function Navigation() {
   const current = useLocation();
@@ -10,64 +13,58 @@ function Navigation() {
   console.log(currentPage === "Home");
 
   return (
-    <div id="navigation">
-      <ul className="nav nav-tabs">
-        <li className="nav-item">
-          <Link
-            to="/"
-            onClick={() => handlePageChange("Home")}
-            className={currentPage === "Home" ? "active" : "nav-link"}
-          >
-            Home
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link
-            to="/About"
-            onClick={() => handlePageChange("About")}
-            className={currentPage === "About" ? "active" : "nav-link"}
-          >
-            About
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link
-            to="/Experience"
-            onClick={() => handlePageChange("Experience")}
-            className={currentPage === "Experience" ? "active" : "nav-link"}
-          >
-            Experience
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link
-            to="/Project"
-            onClick={() => handlePageChange("Project")}
-            className={currentPage === "Project" ? "active" : "nav-link"}
-          >
-            Portfolio
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link
-            to="/Services"
-            onClick={() => handlePageChange("Services")}
-            className={currentPage === "Services" ? "active" : "nav-link"}
-          >
-            Services
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link
-            to="/Contact"
-            onClick={() => handlePageChange("Contact")}
-            className={currentPage === "Contact" ? "active" : "nav-link"}
-          >
-            Contact
-          </Link>
-        </li>
-      </ul>
-    </div>
+    <Navbar expand='lg' className="navigation p-2">
+      <Navbar.Brand href='/' className='brand ps-2'>Double Down Creations</Navbar.Brand>
+      <Container className='nav-tabs fw-bold'>
+          <Navbar.Toggle aria-controls='basic-navbar-nav' />
+          <Navbar.Collapse id='basic-navbar-nav'>
+            <Nav className='me-auto'>
+              <Nav.Link
+                href="/"
+                onClick={() => handlePageChange("Home")}
+                className={currentPage === "Home" ? "active" : "nav-link"}
+              >
+                Home
+              </Nav.Link>
+              <Nav.Link
+                href="/About"
+                onClick={() => handlePageChange("About")}
+                className={currentPage === "About" ? "active" : "nav-link"}
+              >
+                About
+              </Nav.Link>
+              <Nav.Link
+                href="/Experience"
+                onClick={() => handlePageChange("Experience")}
+                className={currentPage === "Experience" ? "active" : "nav-link"}
+              >
+                Experience
+              </Nav.Link>
+              <Nav.Link
+                href="/Project"
+                onClick={() => handlePageChange("Project")}
+                className={currentPage === "Project" ? "active" : "nav-link"}
+              >
+                Portfolio
+              </Nav.Link>
+              <Nav.Link
+                href="/Services"
+                onClick={() => handlePageChange("Services")}
+                className={currentPage === "Services" ? "active" : "nav-link"}
+              >
+                Services
+              </Nav.Link>
+              <Nav.Link
+                href="/Contact"
+                onClick={() => handlePageChange("Contact")}
+                className={currentPage === "Contact" ? "active" : "nav-link"}
+              >
+                Contact
+              </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
