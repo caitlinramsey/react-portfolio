@@ -3,7 +3,7 @@ import './footer.css';
 import navLogo from '../../assets/my-logo-black.png'
 
 
-function Footer () {
+const Footer = () => {
     return (
         <footer id='footer'>
 

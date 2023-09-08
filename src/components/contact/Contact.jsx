@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Container from 'react-bootstrap/Container';
 import emailjs from "emailjs-com";
 import { HiOutlineMail } from 'react-icons/hi';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
@@ -13,9 +14,9 @@ const Contact = () => {
 
   const submit = () => {
     if (name && email && message) {
-      const serviceId = "service_57xz7l2";
-      const templateId = "template_4fk5mag";
-      const userId = "tu_0hbMx3lSgm8Ulh";
+      const serviceId = "service-57xz7l2";
+      const templateId = "template-4fk5mag";
+      const userId = "tu-0hbMx3lSgm8Ulh";
       const templateParams = {
         name,
         email,
@@ -41,60 +42,27 @@ const Contact = () => {
       style={{
         backgroundImage: `url(${background})`,
         backgroundRepeat: "no-repeat",
-        height: "100vh",
+        height: "80vh",
+        width: "100vw",
         backgroundPosition: "-450px",
         backgroundSize: "3000px",
-        margin: "-10px",
+        margin: "-16px",
       }}
     >
       <section id="contact">
-        <h1>Contact Me</h1>
+        <h1 className='contact-me pt-5 text-center'>Contact Me</h1>
 
-        <div className="container contact_container">
-          <div className="contact_options">
-            <article className="contact_option">
-              <HiOutlineMail className="contact_option-icon" />
-              <h3>Email</h3>
-              <a
-                href="mailto:caitlinramsey@outlook.com"
-                target="blank"
-                className=""
-              >
-                Email Me
-              </a>
-            </article>
-            <article className="contact_option">
-              <AiFillLinkedin className="contact_option-icon" />
-              <h3>LinkedIn</h3>
-              <a
-                href="https://www.linkedin.com/in/caitlin-ramsey/"
-                target="blank"
-                className=""
-              >
-                Want to connect?
-              </a>
-            </article>
-            <article className="contact_option">
-              <AiFillGithub className="contact_option-icon" />
-              <h3>GitHub</h3>
-              <a
-                href="https://github.com/caitlinramsey"
-                target="blank"
-                className=""
-              >
-                Check out my projects
-              </a>
-            </article>
-          </div>
-
-          <div className="contactForm">
+        <Container className="contact-container">
+          <div className="contact-form">
             <input
+              className='name mb-1'
               type="text"
               placeholder="Please enter your first and last name"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
             <input
+              className='email mb-1'
               type="email"
               placeholder="Please enter your email address"
               value={email}
@@ -105,17 +73,51 @@ const Contact = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
-            <button className='contact-submit' onClick={submit}>Submit</button>
-            <span>
-            {emailSent ? " Thank you for your message, we'll be in touch!" : ''}
+            <button className='contact-submit p-3' onClick={submit}>Submit</button>
+            <span className='email-sent fs-5 fw-bold'>
+            {emailSent ? "Thank you for your message, we'll be in touch!" : ''}
             </span>
           </div>
-        </div>
+
+          <div className="contact-options">
+            <article className="contact-option">
+              <HiOutlineMail className="contact-option-icon" />
+              <h3>Email</h3>
+              <a
+                href="mailto:caitlinramsey@outlook.com"
+                target="blank"
+                className=""
+              >
+                Email Me
+              </a>
+            </article>
+            <article className="contact-option">
+              <AiFillLinkedin className="contact-option-icon" />
+              <h3>LinkedIn</h3>
+              <a
+                href="https://www.linkedin.com/in/caitlin-ramsey/"
+                target="blank"
+                className=""
+              >
+                Want to connect?
+              </a>
+            </article>
+            <article className="contact-option">
+              <AiFillGithub className="contact-option-icon" />
+              <h3>GitHub</h3>
+              <a
+                href="https://github.com/caitlinramsey"
+                target="blank"
+                className=""
+              >
+                Check out my projects
+              </a>
+            </article>
+          </div>
+        </Container>
       </section>
     </div>
   );
 };
-
-
 
 export default Contact;

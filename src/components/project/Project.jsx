@@ -91,7 +91,7 @@ function Project () {
                             </div>
                         </article>
                     );
-                })};
+                })}
             </Container>
         </section>
     );

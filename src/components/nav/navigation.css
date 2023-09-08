@@ -46,9 +46,19 @@
   background-color: white;
 }
 
+@media screen and (max-width: 1024px) {
+  .brand {
+    display: block;
+    margin: auto;
+  }
+
+  .nav-tabs {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .brand {
-    display: flex;
-    justify-content: center;
+    margin: auto;
   }
 }

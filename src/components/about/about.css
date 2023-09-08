@@ -70,13 +70,7 @@
 
 @media screen and (max-width: 1024px) {
   #about-me {
-    margin-left: -1rem;
     padding-bottom: 35rem;
-    width: 105vw;
-  }
-
-  #about-me h1 {
-    margin-bottom: -1rem;
   }
 
   .about-me-container {
@@ -90,7 +84,6 @@
 
   .about-me-image {
     height: 50rem;
-    margin-left: 10rem;
   }
 
   .about-me-content {
