@@ -1,11 +1,12 @@
 :root {
-  --nav-text: black;
+  --nav-text: white;
   --nav-hover: lightpink;
   --nav-background: hotpink;
+  --navbar: black;
 }
 
 .navigation {
-  background-color: var(--nav-background);
+  background-color: var(--navbar);
 }
 
 .nav-tabs {
@@ -18,12 +19,11 @@
 }
 
 .nav-tabs a:hover {
-  color: var(--nav-hover);
+  background-color: var(--nav-hover);
 }
 
 .active {
-  color: var(--nav-hover) !important;
-  text-decoration: underline !important;
+  color: var(--nav-background) !important;
 }
 
 .socialLinks {
@@ -34,8 +34,7 @@
 
 .socialLinks a {
   font-size: 135%;
-  color: var(--color-primary);
-  background: var(--color-bg);
+  color: var(--nav-text);
   padding: 0.8rem;
   border-radius: 0.7rem;
   display: flex;
@@ -43,7 +42,7 @@
 }
 
 .socialLinks a:hover {
-  background-color: white;
+  background-color: var(--nav-background);
 }
 
 @media screen and (max-width: 1024px) {

@@ -1,6 +1,7 @@
 import Resume from "./Resume";
 import "./home.css";
-import background from '../../assets/jaguar.jpg'
+import background from '../../assets/jaguarbw.png'
+import Container from 'react-bootstrap/Container';
 
 export default function Home() {
   return (
@@ -14,14 +15,15 @@ export default function Home() {
       marginLeft: '-16px',
     }}>
     <header id="header">
-      <div className="container header-container text-center">
-        <h4>Hello I'm</h4>
-        <h1>Caitlin Ramsey</h1>
-        <h4 className='pt-3'>Full-Stack Developer/Graphic Designer/Photographer</h4>
-        <Resume />
-      
-      </div>
-
+      <Container>
+        <div className="header-container text-center">
+          <h4>Hello I'm</h4>
+          <h1>Caitlin Ramsey</h1>
+          <h4 className='pt-3'>Full-Stack Developer/Graphic Designer/Photographer</h4>
+          <Resume />
+        
+        </div>
+      </Container>
     </header>
     </div>
   );

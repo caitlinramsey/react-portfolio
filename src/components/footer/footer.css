@@ -1,5 +1,5 @@
 :root {
-    --footer-background: hotpink;
+    --footer-background: black;
 }
 
 #footer {
@@ -24,7 +24,7 @@
 
 .copyright {
   margin-top: -3rem;
-  padding-bottom: 1rem;
+  padding-top: 4rem;
   color: var(--color-light);
   transition: var(--transition);
   font-size: 1.3rem;

@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { AiFillFacebook, AiOutlineInstagram, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import navLogo from '../../assets/my-logo-black.png'
+import navLogo from '../../assets/logo-white-thick.png'
 
 function Navigation() {
   const current = useLocation();
@@ -17,7 +17,7 @@ function Navigation() {
   return (
     <Navbar expand='lg' className="navigation p-2">
       <Navbar.Brand href='/' className='brand ps-3'>
-          <img src={navLogo} width='150px' alt="image of my logo" />
+          <img src={navLogo} width='180px' alt="image of my logo" />
       </Navbar.Brand>
       <Container className='nav-tabs fw-bold'>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
