@@ -1,9 +1,9 @@
 :root {
-  --nav-text: white;
   --nav-hover: lightpink;
   --nav-background: hotpink;
   --navbar: black;
   --active-hover: grey;
+  --nav-text: white;
 }
 
 .navigation {
@@ -13,6 +13,7 @@
 .nav-tabs {
   font-family: "Preahvihear", sans-serif;
   font-size: 1.5rem;
+  margin: auto;
 }
 
 .nav-tabs a {
@@ -30,24 +31,6 @@
 .active {
   color: var(--nav-background) !important;
   background-color: var(--active-hover) !important;
-}
-
-.social-links {
-  display: flex;
-  justify-content: end;
-  gap: 1rem;
-  font-size: 2rem;
-}
-
-.social-links a {
-  font-size: 3rem;
-  color: var(--nav-text);
-  display: flex;
-}
-
-.social-links a:hover {
-  background-color: var(--nav-background);
-  border-radius: 0.7rem;
 }
 
 @media screen and (max-width: 1280px) {
@@ -69,18 +52,5 @@
   .navbar-nav {
     margin: auto;
     padding-bottom: .5rem;
-  }
-
-  .navbar>.container {
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 912px) {
-  .nav-tabs {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
   }
 }

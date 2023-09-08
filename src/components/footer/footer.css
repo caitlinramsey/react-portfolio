@@ -1,5 +1,7 @@
 :root {
-    --footer-background: black;
+  --footer-background: black;
+  --icon-background: hotpink;
+  --footer-text: white;
 }
 
 #footer {
@@ -20,6 +22,25 @@
 .my-logo {
   overflow-x: hidden;
   background-repeat: no-repeat;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2rem;
+  color: var(--footer-text);
+  margin-top: 2rem;
+}
+
+.social-links a {
+  font-size: 3rem;
+  display: flex;
+}
+
+.social-links a:hover {
+  background-color: var(--icon-background);
+  border-radius: 0.7rem;
 }
 
 .copyright {

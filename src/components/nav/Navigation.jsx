@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { AiFillFacebook, AiOutlineInstagram, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import navLogo from '../../assets/logo-white-thick.png'
 
 function Navigation() {
@@ -19,7 +18,7 @@ function Navigation() {
       <Navbar.Brand href='/' className='brand ps-3'>
           <img src={navLogo} width='180px' alt="image of my logo" />
       </Navbar.Brand>
-      <div className='nav-tabs fw-bold'>
+      <Container className='nav-tabs fw-bold'>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto'>
@@ -67,17 +66,8 @@ function Navigation() {
               </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      </div>
-      
-      <Container>
-        <div className='social-links'>
-            <a href='https://github.com/caitlinramsey' target='blank'><AiFillGithub/></a>
-            <a href='https://www.linkedin.com/in/caitlin-ramsey/' target='blank'><AiFillLinkedin/></a>
-            <a href='https://www.facebook.com/doubledowncreationsus' target='blank'><AiFillFacebook/></a>
-            <a href='https://www.instagram.com/doubledowncreations/' target='blank'><AiOutlineInstagram/></a>
-        </div>
-      </Container>
 
+      </Container>
     </Navbar>
   );
 }
