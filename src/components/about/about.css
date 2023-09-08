@@ -1,21 +1,13 @@
 :root {
   --about-btn: hotpink;
   --about-text: black;
-  --about-background: pink;
-  --about-hover: white;
+  --about-hover: rgb(194, 194, 194);
 }
 
 #about-me {
   width: 100vw;
-  height: 90rem;
+  height: 80rem;
   aspect-ratio: 1;
-  margin-left: -1rem;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    var(--about-btn),
-    transparent
-  );
 }
 
 #about-me h1 {
@@ -27,7 +19,6 @@
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 10%;
-  margin-bottom: 2rem;
 }
 
 .about-me-image {
@@ -36,31 +27,32 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 90%;
-  height: 60rem;
+  height: 50rem;
   border-radius: 2rem;
   overflow: hidden;
-  margin: 2rem;
   margin-left: 6rem;
 }
 
 .about-me-content {
-  width: 50%;
+  width: 60%;
   font-size: 1.5rem;
+  background-color: var(--about-hover);
+  padding: .5rem;
+  border-radius: 1rem;
+  opacity: .9;
 }
 
 .about-me-content p {
-  margin: 2rem 0 2.6rem;
   font-family: "Valera Round", sans-serif;
 }
 
 .about-btn {
-  background-color: var(--about-background);
+  background-color: var(--about-btn);
   text-decoration: none;
   color: var(--about-text);
   padding: 0.8rem;
   border-radius: 0.4rem;
   font-family: "Rubik", sans-serif;
-  font-weight: 400;
 }
 
 .about-btn:hover {
