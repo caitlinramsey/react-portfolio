@@ -3,6 +3,7 @@
   --nav-hover: lightpink;
   --nav-background: hotpink;
   --navbar: black;
+  --active-hover: grey;
 }
 
 .navigation {
@@ -24,6 +25,7 @@
 
 .active {
   color: var(--nav-background) !important;
+  background-color: var(--active-hover) !important;
 }
 
 .socialLinks {
@@ -33,16 +35,14 @@
 }
 
 .socialLinks a {
-  font-size: 135%;
+  font-size: 3rem;
   color: var(--nav-text);
-  padding: 0.8rem;
-  border-radius: 0.7rem;
   display: flex;
-  border: 1px solid transparent;
 }
 
 .socialLinks a:hover {
   background-color: var(--nav-background);
+  border-radius: 0.7rem;
 }
 
 @media screen and (max-width: 1024px) {

@@ -1,5 +1,6 @@
 :root {
-  --experience-background: black;
+  --fe-background: black;
+  --be-background: rgb(60, 60, 60);
   --experience-border: deeppink;
   --experience-hover: hotpink;
   --experience-text: grey;
@@ -10,9 +11,6 @@
 #experience {
   min-height: 80vh;
   min-width: 100vw;
-  background: rgb(177,179,177);
-  background: linear-gradient(90deg, rgba(177,179,177,1) 0%, rgba(34,34,34,1) 25%, rgba(13,20,17,1) 50%, rgba(47,48,48,1) 75%, rgba(152,153,153,1) 100%);
-  margin-left: -1rem;
 }
 
 #experience > h3 {
@@ -20,6 +18,7 @@
   margin-bottom: -.5rem;
   font-size: 4rem;
   font-family: "Borel", cursive;
+  padding-top: 2rem;
 }
 
 #experience > h4 {
@@ -27,7 +26,6 @@
   opacity: 0.7;
   font-size: 1.3rem;
   font-family: "Preahvihear", sans-serif;
-  box-shadow: 3px 3px rgb(183, 183, 183);
 }
 
 .experience-container {
@@ -35,13 +33,13 @@
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   color: var(--experience-header);
+  padding-top: 16rem;
+  margin-left: 62rem;
 }
 
 .experience-container > div {
-  background: var(--experience-background);
   padding: 2.4rem 5rem;
   border-radius: 2rem;
-  border: 1px solid transparent;
 }
 
 .experience-container div h3 {
@@ -50,6 +48,12 @@
 
 .experience-frontend {
   font-size: 1.5rem;
+  background-color: var(--fe-background);
+}
+
+.experience-backend {
+  font-size: 1.5rem;
+  background-color: var(--be-background);
 }
 
 .experience-details div h4 {
@@ -70,13 +74,12 @@
 }
 
 .experience-details-icon {
-  margin-top: 2.1rem;
   color: var(--experience-text);
   font-size: 1.5rem;
 }
 
 .text-light {
-  opacity: 0.4;
+  opacity: 0.3;
   font-family: "Rubik", sans-serif;
 }
 
@@ -84,19 +87,21 @@
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 1440px) {
+  .experience-container {
+    margin: auto;
+    width: 80vw;
+    padding-top: 35rem;
+  }
+
+  .experience-frontend {
+    border: 2px solid white;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .experience-container {
     grid-template-columns: 1fr;
-  }
-
-  .experience-container > div {
-    width: 100%;
-    padding: 0rem;
-    margin: 0 auto;
-  }
-
-  .experience-content {
-    padding: 1rem;
   }
 
   .text-light {
