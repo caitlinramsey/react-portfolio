@@ -19,7 +19,7 @@ function Navigation() {
       <Navbar.Brand href='/' className='brand ps-3'>
           <img src={navLogo} width='180px' alt="image of my logo" />
       </Navbar.Brand>
-      <Container className='nav-tabs fw-bold'>
+      <div className='nav-tabs fw-bold'>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto'>
@@ -67,15 +67,17 @@ function Navigation() {
               </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-
-        <div className='socialLinks'>
-          <a href='https://github.com/caitlinramsey' target='blank'><AiFillGithub/></a>
-          <a href='https://www.linkedin.com/in/caitlin-ramsey/' target='blank'><AiFillLinkedin/></a>
-          <a href='https://www.facebook.com/doubledowncreationsus' target='blank'><AiFillFacebook/></a>
-          <a href='https://www.instagram.com/doubledowncreations/' target='blank'><AiOutlineInstagram/></a>
+      </div>
+      
+      <Container>
+        <div className='social-links'>
+            <a href='https://github.com/caitlinramsey' target='blank'><AiFillGithub/></a>
+            <a href='https://www.linkedin.com/in/caitlin-ramsey/' target='blank'><AiFillLinkedin/></a>
+            <a href='https://www.facebook.com/doubledowncreationsus' target='blank'><AiFillFacebook/></a>
+            <a href='https://www.instagram.com/doubledowncreations/' target='blank'><AiOutlineInstagram/></a>
         </div>
-
       </Container>
+
     </Navbar>
   );
 }
