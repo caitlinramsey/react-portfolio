@@ -1,7 +1,6 @@
 import Resume from "./Resume";
 import "./home.css";
 import background from '../../assets/jaguar.jpg'
-import navLogo from '../../assets/my-logo-black.png'
 
 export default function Home() {
   return (

@@ -8,11 +8,6 @@
   background-color: var(--nav-background);
 }
 
-.brand {
-  color: var(--nav-text);
-  font-family: "Preahvihear", sans-serif;
-}
-
 .nav-tabs {
   font-family: "Preahvihear", sans-serif;
   font-size: 1.5rem;
@@ -29,4 +24,24 @@
 .active {
   color: var(--nav-hover) !important;
   text-decoration: underline !important;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+.socialLinks a {
+  font-size: 135%;
+  color: var(--color-primary);
+  background: var(--color-bg);
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  display: flex;
+  border: 1px solid transparent;
+}
+
+.socialLinks a:hover {
+  background-color: white;
 }

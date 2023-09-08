@@ -1,22 +1,17 @@
 import React from 'react';
 import './footer.css';
-import { AiFillFacebook, AiOutlineInstagram, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import navLogo from '../../assets/my-logo-black.png'
 
 
 function Footer () {
     return (
         <footer id='footer'>
 
-            {/* <h3>Want to see my photography and design? Click the logo.</h3>
-            <a href="https://doubledowncreations.com/" className="my_logo">
-            <img src={navLogo} alt="image of my logo" />
-            </a> */}
-
-            <div className='socialLinks'>
-                <a href='https://github.com/caitlinramsey' target='blank'><AiFillGithub/></a>
-                <a href='https://www.linkedin.com/in/caitlin-ramsey/' target='blank'><AiFillLinkedin/></a>
-                <a href='https://www.facebook.com/doubledowncreationsus' target='blank'><AiFillFacebook/></a>
-                <a href='https://www.instagram.com/doubledowncreations/' target='blank'><AiOutlineInstagram/></a>
+            <div className='photography'>
+                <h4>Want to see my photography and design? Click the logo.</h4>
+                <a href="https://doubledowncreations.com/" className="my-logo">
+                <img src={navLogo} width='250px' alt="image of my logo" />
+                </a>
             </div>
 
             <div className='copyright'>
