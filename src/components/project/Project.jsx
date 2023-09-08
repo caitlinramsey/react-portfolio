@@ -1,4 +1,5 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
 import './project.css';
 import project1 from '../../assets/zooquarium.jpg';
 import project2 from '../../assets/bugbytes.jpg';
@@ -61,29 +62,29 @@ const projectInfo = [
 function Project () {
     return (
         <section id='project'>
-            <h1>Portfolio</h1>
+            <h1 className='portfolio pt-5 text-center'>Portfolio</h1>
 
-            <div className='container project_container'>
+            <Container className='project-container pb-4 pt-5'>
                 {projectInfo.map(({ id, image, title, description, github, demo }) => {
                     return (
-                        <article key={id} className='project_item'>
-                            <div className='project_item-image'>
+                        <article key={id} className='project-item'>
+                            <h3 className='project-title text-center fs-2 mb-2'>{title}</h3>
+                            <div className='project-item-image'>
                                 <img src={image} alt={title} />
                             </div>
-                            <h3>{title}</h3>
-                            <h4>{description}</h4>
-                            <div className='project_item-links'>
+                            <h4 className='project-description mt-3 mb-3'>{description}</h4>
+                            <div className='project-item-links'>
                                 <a
                                     href={github}
-                                    className='btn github_btn'
-                                    target='_blank'
+                                    className='btn github-btn'
+                                    target='-blank'
                                 >
                                     GitHub
                                 </a>
                                 <a
                                     href={demo}
-                                    className='btn live_btn'
-                                    target='_blank'
+                                    className='btn live-btn'
+                                    target='-blank'
                                 >
                                     Live Site
                                 </a>
@@ -91,7 +92,7 @@ function Project () {
                         </article>
                     );
                 })};
-            </div>
+            </Container>
         </section>
     );
 }

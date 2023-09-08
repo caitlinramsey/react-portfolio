@@ -5,24 +5,20 @@
 }
 
 #project > h1 {
-  text-align: center;
   font-size: 4rem;
-  padding-top: 1.5rem;
   font-family: "Borel", cursive;
-  box-shadow: 6px 4px 1px 10px var(--project-text);
+  /* box-shadow: 6px 4px 1px 10px var(--project-text); */
 }
 
-.project_container {
+.project-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  min-width: 90vw;
   gap: 2rem;
   justify-content: center;
-  padding-bottom: 2rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
 }
 
-.project_item {
+.project-item {
   background: var(--project-background);
   padding: 1.3rem;
   border-radius: 2rem;
@@ -30,34 +26,31 @@
   transition: var(--transition);
 }
 
-.project_item:hover {
+.project-item:hover {
   border-color: var(--project-hover);
   background: transparent;
 }
 
-.project_item-image {
+.project-item-image {
   border-radius: 1rem;
   overflow: hidden;
   height: 30rem;
 }
 
-.project_item-image img {
+.project-item-image img {
   height: 30rem;
 }
 
-.project_item h3 {
-  margin: 1rem 0 1rem;
-  font-size: 1.8rem;
+.project-item h3 {
   font-family: "Preahvihear", sans-serif;
 }
 
-.project_item h4 {
-  margin: 1rem 0 1rem;
+.project-item h4 {
   font-size: 1rem;
   font-family: "Preahvihear", sans-serif;
 }
 
-.project_item-links {
+.project-item-links {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
@@ -65,8 +58,8 @@
   font-weight: 500;
 }
 
-.github_btn,
-.live_btn {
+.github-btn,
+.live-btn {
   background-color: var(--project-hover);
   padding: 1rem;
   border-radius: 0.5rem;
@@ -75,29 +68,29 @@
 }
 
 @media screen and (max-width: 1440px) {
-  .project_container {
+  .project-container {
     display: block;
     width: 50vw;
     margin: auto;
   }
 
-  .project_item {
+  .project-item {
     margin-bottom: 1rem;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .project_container {
+  .project-container {
     width: 80vw;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .project_container {
+  .project-container {
     padding: 0;
   }
 
-  .project_item {
+  .project-item {
     border-radius: 1.8rem;
   }
 }
