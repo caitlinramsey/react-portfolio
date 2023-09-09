@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import emailjs from "emailjs-com";
 import { HiOutlineMail } from 'react-icons/hi';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
-import background from '../../assets/red-panda.jpg'
+import background from '../../assets/redpanda.jpg'
 import './contact.css';
 
 const Contact = () => {
@@ -42,7 +42,6 @@ const Contact = () => {
       style={{
         backgroundImage: `url(${background})`,
         backgroundRepeat: "no-repeat",
-        height: "80vh",
         width: "100vw",
         backgroundPosition: "-450px",
         backgroundSize: "3000px",
@@ -57,14 +56,14 @@ const Contact = () => {
             <input
               className='name mb-1'
               type="text"
-              placeholder="Please enter your first and last name"
+              placeholder="First & last name"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
             <input
               className='email mb-1'
               type="email"
-              placeholder="Please enter your email address"
+              placeholder="Email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
