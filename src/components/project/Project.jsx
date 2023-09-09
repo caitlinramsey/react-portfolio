@@ -7,6 +7,7 @@ import project3 from '../../assets/weather-forecast.png';
 import project4 from '../../assets/note-taker.png';
 import project5 from '../../assets/borrowhood-mockup.png';
 import project6 from '../../assets/workday-scheduler.png';
+import background from '../../assets/mountain.jpg';
 
 const projectInfo = [
     {
@@ -61,39 +62,48 @@ const projectInfo = [
 
 function Project () {
     return (
-        <section id='project'>
-            <h1 className='portfolio pt-5 text-center'>Portfolio</h1>
+        <div style={{
+            backgroundImage: `url(${background})`,
+            backgroundRepeat: 'no-repeat',
+            width:'100vw',
+            backgroundPosition: '-400px',
+            backgroundSize: '3000px',
+            marginLeft: '-16px',
+          }}>
+            <section id='project'>
+                <h1 className='portfolio pt-5 text-center'>Portfolio</h1>
 
-            <Container className='project-container pb-4 pt-5'>
-                {projectInfo.map(({ id, image, title, description, github, demo }) => {
-                    return (
-                        <article key={id} className='project-item'>
-                            <h3 className='project-title text-center fs-2 mb-2'>{title}</h3>
-                            <div className='project-item-image'>
-                                <img src={image} alt={title} />
-                            </div>
-                            <h4 className='project-description mt-3 mb-3'>{description}</h4>
-                            <div className='project-item-links'>
-                                <a
-                                    href={github}
-                                    className='btn github-btn'
-                                    target='-blank'
-                                >
-                                    GitHub
-                                </a>
-                                <a
-                                    href={demo}
-                                    className='btn live-btn'
-                                    target='-blank'
-                                >
-                                    Live Site
-                                </a>
-                            </div>
-                        </article>
-                    );
-                })}
-            </Container>
-        </section>
+                <Container className='project-container pb-4 pt-5'>
+                    {projectInfo.map(({ id, image, title, description, github, demo }) => {
+                        return (
+                            <article key={id} className='project-item'>
+                                <h3 className='project-title text-center fs-2 mb-2'>{title}</h3>
+                                <div className='project-item-image'>
+                                    <img src={image} alt={title} />
+                                </div>
+                                <h4 className='project-description mt-3 mb-3'>{description}</h4>
+                                <div className='project-item-links'>
+                                    <a
+                                        href={github}
+                                        className='btn github-btn'
+                                        target='-blank'
+                                    >
+                                        GitHub
+                                    </a>
+                                    <a
+                                        href={demo}
+                                        className='btn live-btn'
+                                        target='-blank'
+                                    >
+                                        Live Site
+                                    </a>
+                                </div>
+                            </article>
+                        );
+                    })}
+                </Container>
+            </section>
+        </div>
     );
 }
 

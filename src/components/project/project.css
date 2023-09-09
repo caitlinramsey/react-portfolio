@@ -2,6 +2,7 @@
   --project-hover: hotpink;
   --project-background: pink;
   --project-text: black;
+  --hover-text: white;
 }
 
 #project > h1 {
@@ -28,6 +29,7 @@
 
 .project-item:hover {
   border-color: var(--project-hover);
+  color: var(--hover-text);
   background: transparent;
 }
 

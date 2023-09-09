@@ -1,6 +1,6 @@
 import Resume from "./Resume";
 import "./home.css";
-import background from '../../assets/jaguarbw.png'
+import background from '../../assets/jaguarbw.png';
 import Container from 'react-bootstrap/Container';
 
 export default function Home() {
