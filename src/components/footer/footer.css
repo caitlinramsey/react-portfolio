@@ -53,19 +53,17 @@
 }
 
 @media screen and (max-width: 1024px) {
-  #footer {
-    width: 105vw;
-  }
-
-  .footer_logo {
+  .my-logo img {
     width: 20%;
   }
 }
 
-@media screen and (max-width: 600px) {
- 
-}
+@media screen and (max-width: 425px) {
+  .footer-photography {
+    padding-right: 1rem;
+  }
 
-@media screen and (max-width: 400px) {
-
+  .my-logo img {
+    padding: 1.5rem;
+  }
 }
