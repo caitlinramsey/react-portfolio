@@ -13,7 +13,7 @@
 .nav-tabs {
   font-family: "Preahvihear", sans-serif;
   font-size: 1.5rem;
-  margin: auto;
+  border: none;
 }
 
 .nav-tabs a {
