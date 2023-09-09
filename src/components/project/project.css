@@ -3,12 +3,17 @@
   --project-background: pink;
   --project-text: black;
   --hover-text: white;
+  --project-button-hover: grey;
 }
 
 #project > h1 {
   font-size: 4rem;
   font-family: "Borel", cursive;
   /* box-shadow: 6px 4px 1px 10px var(--project-text); */
+}
+
+.portfolio {
+  color: var(--hover-text);
 }
 
 .project-container {
@@ -67,6 +72,16 @@
   border-radius: 0.5rem;
   text-decoration: none;
   color: var(--project-text);
+}
+
+.github-btn:hover {
+  background-color: var(--project-button-hover);
+  color: var(--hover-text);
+}
+
+.live-btn:hover {
+  background-color: var(--project-button-hover);
+  color: var(--hover-text);
 }
 
 @media screen and (max-width: 1440px) {

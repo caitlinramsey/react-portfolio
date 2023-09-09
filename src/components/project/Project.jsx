@@ -7,7 +7,7 @@ import project3 from '../../assets/weather-forecast.png';
 import project4 from '../../assets/note-taker.png';
 import project5 from '../../assets/borrowhood-mockup.png';
 import project6 from '../../assets/workday-scheduler.png';
-import background from '../../assets/mountain.jpg';
+import background from '../../assets/waterfall.jpg';
 
 const projectInfo = [
     {

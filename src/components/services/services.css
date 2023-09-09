@@ -58,14 +58,17 @@
   font-family: "Preahvihear", sans-serif;
 }
 
+@media screen and (max-width: 1280px) {
+  .services-container {
+    padding-bottom: 2rem;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .services-container {
     grid-template-columns: 1fr;
     gap: 2rem;
-  }
-
-  .service {
-    height: auto;
+    padding-bottom: 2rem;
   }
 }
 
