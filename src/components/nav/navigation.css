@@ -28,6 +28,10 @@
   background-color: white;
 }
 
+.me-auto {
+  margin: auto;
+}
+
 .active {
   color: var(--nav-background) !important;
   background-color: var(--active-hover) !important;
