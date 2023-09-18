@@ -3,9 +3,9 @@ import Container from 'react-bootstrap/Container';
 import './project.css';
 import project1 from '../../assets/zooquarium.jpg';
 import project2 from '../../assets/bugbytes.jpg';
-import project3 from '../../assets/weather-forecast.png';
+import project3 from '../../assets/borrowhood-mockup.jpg';
 import project4 from '../../assets/note-taker.png';
-import project5 from '../../assets/borrowhood-mockup.png';
+import project5 from '../../assets/weather-forecast.png';
 import project6 from '../../assets/workday-scheduler.png';
 import background from '../../assets/waterfall.jpg';
 
@@ -29,10 +29,10 @@ const projectInfo = [
     {
         id: 3,
         image: project3,
-        title: 'Weather Dashboard',
-        description: 'This application allows you to view the current weather and 5 day forecast in any US city.',
-        github: 'https://github.com/caitlinramsey/weather-forecast',
-        demo: 'https://caitlinramsey.github.io/weather-forecast/',
+        title: 'Borrowhood',
+        description: 'Borrowhood is an application which allows people to borrow needed items from their neighbors. It also allows neighbors to lend and borrow tools, equipment, and household items with or from one another. It encourages community interaction and sharing of resources which, in turn, minimizes individual purchases and decreases landfill waste. It is easy and fast to sign up and start listing items available for lending or searching for what you need!',
+        github: 'https://github.com/skywalkah/borrowhood',
+        demo: 'https://polar-beach-65067-18b2f94f915d.herokuapp.com//',
     },
     {
         id: 4,
@@ -45,10 +45,10 @@ const projectInfo = [
     {
         id: 5,
         image: project5,
-        title: 'Borrowhood',
-        description: 'Borrowhood is an application which allows people to borrow needed items from their neighbors. It also allows neighbors to lend and borrow tools, equipment, and household items with or from one another. It encourages community interaction and sharing of resources which, in turn, minimizes individual purchases and decreases landfill waste. It is easy and fast to sign up and start listing items available for lending or searching for what you need!',
-        github: 'https://github.com/skywalkah/borrowhood',
-        demo: 'https://polar-beach-65067-18b2f94f915d.herokuapp.com//',
+        title: 'Weather Dashboard',
+        description: 'This application allows you to view the current weather and 5 day forecast in any US city.',
+        github: 'https://github.com/caitlinramsey/weather-forecast',
+        demo: 'https://caitlinramsey.github.io/weather-forecast/',
     },
     {
         id: 6,
