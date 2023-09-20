@@ -17,7 +17,6 @@
   flex-direction: column;
   gap: 5rem;
   margin: auto;
-  padding-bottom: 15rem;
 }
 
 .contact-form {
@@ -118,10 +117,8 @@ textarea::placeholder {
   font-size: 1rem;
 }
 
-@media screen and (max-width: 1440px) {
-  .contact-container {
-    padding-bottom: 5rem;
-  }
+.my-logo {
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 1024px) {
@@ -135,6 +132,20 @@ textarea::placeholder {
   .contact-options {
     flex-direction: column;
   }
+
+  .my-logo img {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form {
+    width: 80vw;
+  }
+
+  .my-logo img {
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -145,19 +156,32 @@ textarea::placeholder {
 }
 
 @media screen and (max-width: 425px) {
+
   input::placeholder {
     font-size: .8rem;
   }
+
+  .my-logo img {
+    width: 50%;
+  }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 360px) {
   input::placeholder {
-    font-size: .7rem;
+    font-size: 1rem;
+  }
+
+  .contact-option {
+    width: 80vw;
   }
 }
 
 @media screen and (max-width: 320px) {
   input::placeholder {
     font-size: .5rem;
+  }
+
+  .my-logo img {
+    width: 80%;
   }
 }

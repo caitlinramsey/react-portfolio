@@ -3,7 +3,7 @@
 }
 
 #header {
-  padding-top: 15rem;
+  padding-top: 5rem;
 }
 
 .header-container > h1 {
@@ -21,12 +21,6 @@
   font-family: "Borel", cursive;
 }
 
-@media screen and (max-width: 1440px) {
-  .my-logo div style {
-    background-position: 800px 10px;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   .header-container h1 {
     margin-left: auto;
@@ -37,9 +31,5 @@
 @media screen and (max-width: 425px) {
   .header-container h4 {
     font-size: 1.5rem;
-  }
-
-  .my-logo img {
-    width: 100%;
   }
 }

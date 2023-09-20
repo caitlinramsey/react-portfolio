@@ -37,13 +37,6 @@ function Navigation() {
                 About
               </Nav.Link>
               <Nav.Link
-                href="/Experience"
-                onClick={() => handlePageChange("Experience")}
-                className={currentPage === "Experience" ? "active" : "nav-link"}
-              >
-                Experience
-              </Nav.Link>
-              <Nav.Link
                 href="/Project"
                 onClick={() => handlePageChange("Project")}
                 className={currentPage === "Project" ? "active" : "nav-link"}

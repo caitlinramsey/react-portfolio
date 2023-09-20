@@ -2,18 +2,9 @@ import React from 'react';
 import './services.css';
 import { FaCheckDouble } from 'react-icons/fa6';
 import Container from 'react-bootstrap/Container';
-import background from '../../assets/mountain.jpg';
 
 function Services () {
     return (
-        <div style={{
-            backgroundImage: `url(${background})`,
-            backgroundRepeat: 'no-repeat',
-            width:'100vw',
-            backgroundPosition: '-300px',
-            backgroundSize: '3000px',
-            marginLeft: '-16px',
-          }}>
             <section id='services' className='services pt-5'>
                 <h1>Services</h1>
 
@@ -64,7 +55,6 @@ function Services () {
                     </article>
                 </Container>
             </section>
-        </div>
     )
 }
 

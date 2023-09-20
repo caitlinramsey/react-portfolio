@@ -1,17 +1,11 @@
 import React from 'react';
 import './about.css';
-import background from '../../assets/boysbw.png'
 import Container from 'react-bootstrap/Container';
+import { Slide } from 'react-awesome-reveal';
 
 function About() {
     return (
-        <div style={{
-            backgroundImage: `url(${background})`,
-            backgroundRepeat: 'no-repeat',
-            width:'100vw',
-            backgroundSize: '3000px',
-            marginLeft: '-16px',
-          }}>
+        <Slide direction='right' triggerOnce>
         <section id='about-me' className='about-me pt-5'>
             <h1 className='text-center'>About Me</h1>
 
@@ -33,7 +27,7 @@ function About() {
                 </div>
             </Container>
         </section>
-        </div>
+        </Slide>
     );
 }
 

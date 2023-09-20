@@ -61,9 +61,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-  #about-me {
-    padding-bottom: 35rem;
-  }
 
   .about-me-container {
     grid-template-columns: 1fr;
@@ -76,6 +73,7 @@
 
   .about-me-image {
     height: 50rem;
+    margin-bottom: 2rem;
   }
 
   .about-me-content {
@@ -97,7 +95,6 @@
 @media screen and (max-width: 768px) {
   #about-me {
     margin-left: -1rem;
-    padding-bottom: 10rem;
   }
 
   .about-me-image {

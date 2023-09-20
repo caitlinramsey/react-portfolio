@@ -3,3 +3,8 @@
 html {
     overflow-x: hidden;
 }
+
+body {
+    background: rgb(56,56,56);
+    background: linear-gradient(90deg, rgba(56,56,56,1) 0%, rgba(143,143,143,1) 100%);
+}

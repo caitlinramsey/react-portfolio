@@ -3,8 +3,9 @@ import Container from 'react-bootstrap/Container';
 import emailjs from "emailjs-com";
 import { HiOutlineMail } from 'react-icons/hi';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
-import background from '../../assets/redpanda.jpg'
+import navLogo from '../../assets/logo-white-thick.png'
 import './contact.css';
+import { Slide } from 'react-awesome-reveal';
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -38,16 +39,7 @@ const Contact = () => {
   };
 
   return (
-    <div
-      style={{
-        backgroundImage: `url(${background})`,
-        backgroundRepeat: "no-repeat",
-        width: "100vw",
-        backgroundPosition: "-450px",
-        backgroundSize: "3000px",
-        margin: "-16px",
-      }}
-    >
+    <Slide direction='right' triggerOnce>
       <section id="contact">
         <h1 className='contact-me pt-5 text-center'>Contact Me</h1>
 
@@ -113,9 +105,17 @@ const Contact = () => {
               </a>
             </article>
           </div>
+
+          <div className='photography text-center'>
+                <h4 className='footer-photography text-white pb-2'>Want to see my photography and design? Click the logo.</h4>
+                <a href="https://doubledowncreations.com/" className="my-logo">
+                <img src={navLogo} width='250px' alt="image of my logo" />
+                </a>
+            </div>
+
         </Container>
       </section>
-    </div>
+    </Slide>
   );
 };
 

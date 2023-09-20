@@ -4,24 +4,14 @@
   --footer-text: white;
 }
 
-#footer {
-  background: var(--footer-background);
-  padding-top: 1.6rem;
-  padding-bottom: 1rem;
+footer {
+  margin: auto;
   text-align: center;
-  font-size: 0.9rem;
-  position: absolute;
-  left: 0;
-  width: 100%;
+  padding: 5rem;
 }
 
-#footer a {
+.footer a {
   color: var(--color-bg);
-}
-
-.my-logo {
-  overflow-x: hidden;
-  background-repeat: no-repeat;
 }
 
 .social-links {
@@ -29,7 +19,7 @@
   justify-content: center;
   gap: 1rem;
   font-size: 2rem;
-  color: var(--footer-text);
+  color: var(--footer-background);
   margin-top: 2rem;
 }
 
@@ -53,17 +43,25 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .my-logo img {
-    width: 20%;
+  footer {
+    padding-top: 7rem;
   }
 }
 
-@media screen and (max-width: 425px) {
-  .footer-photography {
-    padding-right: 1rem;
+@media screen and (max-width: 820px) {
+  footer {
+    padding-top: 13rem;
   }
+}
 
-  .my-logo img {
-    padding: 1.5rem;
+@media screen and (max-width: 360px) {
+  footer {
+    padding-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  footer {
+    padding-top: 10rem;
   }
 }

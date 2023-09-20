@@ -7,7 +7,6 @@ import project3 from '../../assets/borrowhood-mockup.jpg';
 import project4 from '../../assets/note-taker.png';
 import project5 from '../../assets/weather-forecast.png';
 import project6 from '../../assets/workday-scheduler.png';
-import background from '../../assets/waterfall.jpg';
 
 const projectInfo = [
     {
@@ -62,14 +61,6 @@ const projectInfo = [
 
 function Project () {
     return (
-        <div style={{
-            backgroundImage: `url(${background})`,
-            backgroundRepeat: 'no-repeat',
-            width:'100vw',
-            backgroundPosition: '-400px',
-            backgroundSize: '3000px',
-            marginLeft: '-16px',
-          }}>
             <section id='project'>
                 <h1 className='portfolio pt-5 text-center'>Portfolio</h1>
 
@@ -103,7 +94,6 @@ function Project () {
                     })}
                 </Container>
             </section>
-        </div>
     );
 }
 
