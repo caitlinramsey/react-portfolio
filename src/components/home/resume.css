@@ -19,12 +19,19 @@
   border-radius: 0.5rem;
   text-decoration: none;
   color: var(--resume-text);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
+  margin-top: 1rem;
 }
 
 .btn_resume:hover {
   background-color: var(--resume-hover);
   color: var(--resume-text-hover);
+}
+
+@media screen and (max-width: 375px) {
+  .btn_resume {
+    font-size: 1rem;
+  }
 }

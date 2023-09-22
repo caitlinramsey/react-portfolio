@@ -30,11 +30,11 @@ import {
 
 export default function Skills() {
   return (
-    <section id="skills" className="text-center mx-auto mt-3">
+    <section id="skills" className="text-center mx-auto">
       <Slide direction="right" triggerOnce>
-        <h2 className="section-title mb-5">Skills</h2>
+        <h2 className="main-section-title mb-5 pt-5">Skills</h2>
         <div className="skills-container d-flex flex-wrap mx-auto justify-content-center">
-          <div className="section-title text-decoration-underline">
+          <div className="section-title text-decoration-underline text-white">
             <h3>Front-End</h3>
           </div>
           <div className="front-end">
@@ -66,7 +66,7 @@ export default function Skills() {
               </Slide>
             </div>
           </div>
-          <div className="section-title text-decoration-underline">
+          <div className="section-title text-decoration-underline text-white">
             <h3>Back-End</h3>
           </div>
           <div className="back-end">
@@ -104,7 +104,7 @@ export default function Skills() {
               </Slide>
             </div>
           </div>
-          <div className="section-title text-decoration-underline">
+          <div className="section-title text-decoration-underline text-white">
             <h3>Tools</h3>
           </div>
           <div className="tools">

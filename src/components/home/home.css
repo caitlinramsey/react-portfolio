@@ -1,5 +1,5 @@
 :root {
-  --home-text: grey;
+  --name: black;
 }
 
 #header {
@@ -7,28 +7,55 @@
 }
 
 .header-container > h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   font-family: "Preahvihear", sans-serif;
+  color: var(--name);
 }
 
 .header-container h4 {
-  font-family: "Preahvihear", sans-serif;
-}
-
-.header-container > h4 {
-  opacity: 0.8;
-  font-size: 2rem;
-  font-family: "Borel", cursive;
+  opacity: 0.9;
+  font-size: 3rem;
 }
 
 @media screen and (max-width: 1024px) {
   .header-container h1 {
     margin-left: auto;
+    font-size: 5rem;
+  }
+
+  .header-container h4 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-container h1 {
+    margin-left: auto;
+    font-size: 4rem;
+  }
+
+  .header-container h4 {
     font-size: 2rem;
   }
 }
 
 @media screen and (max-width: 425px) {
+  .header-container h1 {
+    margin-left: auto;
+    font-size: 3rem;
+  }
+
+  .header-container h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header-container h1 {
+    margin-left: auto;
+    font-size: 2rem;
+  }
+
   .header-container h4 {
     font-size: 1.5rem;
   }
