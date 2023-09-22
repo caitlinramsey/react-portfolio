@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Container from 'react-bootstrap/Container';
+import Container from "react-bootstrap/Container";
 import emailjs from "emailjs-com";
-import { HiOutlineMail } from 'react-icons/hi';
-import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
-import navLogo from '../../assets/logo-white-thick.png'
-import './contact.css';
-import { Slide } from 'react-awesome-reveal';
+import { HiOutlineMail } from "react-icons/hi";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import navLogo from "../../assets/logo-white-thick.png";
+import "./contact.css";
+import { Slide } from "react-awesome-reveal";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -39,21 +39,21 @@ const Contact = () => {
   };
 
   return (
-    <Slide direction='right' triggerOnce>
+    <Slide direction="right" triggerOnce>
       <section id="contact">
-        <h1 className='contact-me pt-5 text-center'>Contact Me</h1>
+        <h1 className="contact-me pt-5 text-center">Contact Me</h1>
 
         <Container className="contact-container">
           <div className="contact-form">
             <input
-              className='name mb-1'
+              className="name mb-1"
               type="text"
               placeholder="First & last name"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
             <input
-              className='email mb-1'
+              className="email mb-1"
               type="email"
               placeholder="Email address"
               value={email}
@@ -64,9 +64,13 @@ const Contact = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
-            <button className='contact-submit p-3' onClick={submit}>Submit</button>
-            <span className='email-sent fs-5 fw-bold'>
-            {emailSent ? "Thank you for your message, we'll be in touch!" : ''}
+            <button className="contact-submit p-3" onClick={submit}>
+              Submit
+            </button>
+            <span className="email-sent fs-5 fw-bold">
+              {emailSent
+                ? "Thank you for your message, we'll be in touch!"
+                : ""}
             </span>
           </div>
 
@@ -106,13 +110,14 @@ const Contact = () => {
             </article>
           </div>
 
-          <div className='photography text-center'>
-                <h4 className='footer-photography text-white pb-2'>Want to see my photography and design? Click the logo.</h4>
-                <a href="https://doubledowncreations.com/" className="my-logo">
-                <img src={navLogo} width='250px' alt="image of my logo" />
-                </a>
-            </div>
-
+          <div className="photography text-center">
+            <h4 className="footer-photography text-white pb-2">
+              Want to see my photography and design? Click the logo.
+            </h4>
+            <a href="https://doubledowncreations.com/" className="my-logo">
+              <img src={navLogo} width="250px" alt="image of my logo" />
+            </a>
+          </div>
         </Container>
       </section>
     </Slide>

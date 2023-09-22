@@ -1,15 +1,13 @@
 :root {
   --project-hover: hotpink;
-  --project-background: pink;
-  --project-text: black;
+  --project-background: black;
   --hover-text: white;
   --project-button-hover: grey;
 }
 
-#project > h1 {
+#project h1 {
   font-size: 4rem;
-  font-family: "Borel", cursive;
-  /* box-shadow: 6px 4px 1px 10px var(--project-text); */
+  font-family: "Preahvihear", sans-serif;
 }
 
 .portfolio {
@@ -71,7 +69,8 @@
   padding: 1rem;
   border-radius: 0.5rem;
   text-decoration: none;
-  color: var(--project-text);
+  color: var(--project-background);
+  font-weight: bold;
 }
 
 .github-btn:hover {
