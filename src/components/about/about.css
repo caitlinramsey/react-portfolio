@@ -1,7 +1,6 @@
 :root {
-  --about-btn: hotpink;
   --about-text: black;
-  --about-hover: rgb(194, 194, 194);
+  --about-bg: rgb(194, 194, 194);
 }
 
 #about-me {
@@ -19,6 +18,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 10%;
+  margin-top: 10rem;
 }
 
 .about-me-image {
@@ -36,7 +36,7 @@
 .about-me-content {
   width: 60%;
   font-size: 1.5rem;
-  background-color: var(--about-hover);
+  background-color: var(--about-bg);
   padding: .5rem;
   border-radius: 1rem;
   opacity: .9;
@@ -46,25 +46,12 @@
   font-family: "Valera Round", sans-serif;
 }
 
-.about-btn {
-  background-color: var(--about-btn);
-  text-decoration: none;
-  color: var(--about-text);
-  padding: 0.8rem;
-  border-radius: 0.4rem;
-  font-family: "Rubik", sans-serif;
-}
-
-.about-btn:hover {
-  background-color: var(--about-text);
-  color: var(--about-hover);
-}
-
 @media screen and (max-width: 1024px) {
 
   .about-me-container {
     grid-template-columns: 1fr;
     gap: 0;
+    margin-top: 0;
   }
 
   .about-me {
@@ -86,10 +73,6 @@
     padding-right: 3rem;
     text-align: center;
   }
-
-  .about-btn {
-    background-color: var(--about-btn);
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -99,10 +82,6 @@
 
   .about-me-image {
     height: 40rem;
-  }
-
-  .about-btn {
-    background-color: var(--about-btn);
   }
 }
 
@@ -151,6 +130,17 @@
     height: 30rem;
     margin-left: 4rem;
   }
+
+  .about-me-content {
+    width: 80vw;
+    margin: auto;
+    font-size: 1.3rem;
+  }
+
+  .about-me-content p {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -167,5 +157,17 @@
   .about-me-image {
     height: 25rem;
     margin-left: 3rem;
+  }
+
+  .about-me-content p {
+    font-size: 1.2rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .about-me-content {
+    font-size: 1rem;
   }
 }

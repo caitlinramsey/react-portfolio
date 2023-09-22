@@ -62,7 +62,7 @@ footer {
 
 @media screen and (max-width: 320px) {
   footer {
-    padding-top: 10rem;
+    padding-top: 1rem;
   }
 
   .copyright {
