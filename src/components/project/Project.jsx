@@ -34,8 +34,8 @@ const projectInfo = [
     title: "Borrowhood",
     description:
       "Borrowhood is an application which allows people to borrow needed items from their neighbors. It also allows neighbors to lend and borrow tools, equipment, and household items with or from one another. It encourages community interaction and sharing of resources which, in turn, minimizes individual purchases and decreases landfill waste. It is easy and fast to sign up and start listing items available for lending or searching for what you need!",
-    github: "https://github.com/skywalkah/borrowhood",
-    demo: "https://polar-beach-65067-18b2f94f915d.herokuapp.com//",
+    github: "https://github.com/caitlinramsey/borrowhood-cr",
+    demo: "https://borrowhood-cr-f9cdabd8dd11.herokuapp.com/",
   },
   {
     id: 4,

@@ -29,8 +29,8 @@ footer {
 }
 
 .social-links a:hover {
-  background-color: var(--icon-background);
   border-radius: 0.7rem;
+  transform: scale(1.5);
 }
 
 .copyright {

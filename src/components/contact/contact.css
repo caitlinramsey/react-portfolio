@@ -24,6 +24,53 @@
   margin: auto;
 }
 
+input::placeholder {
+  color: var(--submit-text);
+  font-family: "Preahvihear", sans-serif;
+  font-size: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--submit-background);
+  resize: none;
+  background-color: var(--submit-fill);
+}
+
+textarea {
+  padding-bottom: 6.5rem;
+}
+
+textarea::placeholder {
+  color: var(--submit-text);
+  font-family: "Preahvihear", sans-serif;
+  font-size: 1rem;
+}
+
+.contact-submit {
+  margin-top: 0.5rem;
+  display: inline-block;
+  font-size: 1.3rem;
+  text-decoration: none;
+  background-color: var(--submit-background);
+  border-radius: 0.5rem;
+  font-family: "Preahvihear", sans-serif;
+  width: 10rem;
+}
+
+.contact-submit:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.email-sent {
+  padding-left: 2rem;
+}
+
 .contact-options {
   display: flex;
   flex-direction: row;
@@ -62,59 +109,12 @@
   padding: 1rem;
   border-radius: 0.5rem;
   font-family: "Preahvihear", sans-serif;
+  border: 2px solid var(--submit-text);
 }
 
 .contact-option a:hover {
-  background-color: var(--submit-hover);
-  border-color: var(--submit-border);
-}
-
-.contact-submit {
-  margin-top: 0.5rem;
-  display: inline-block;
-  font-size: 1.3rem;
-  text-decoration: none;
-  color: var(--submit-text);
-  background-color: var(--submit-background);
-  border-radius: 0.5rem;
-  font-family: "Preahvihear", sans-serif;
-  width: 10rem;
-}
-
-.contact-submit:hover {
-  background-color: var(--submit-hover);
+  transform: scale(1.2);
   cursor: pointer;
-}
-
-.email-sent {
-  padding-left: 2rem;
-}
-
-input::placeholder {
-  color: var(--submit-text);
-  font-family: "Preahvihear", sans-serif;
-  font-size: 1rem;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  background: transparent;
-  border: 2px solid var(--submit-background);
-  resize: none;
-  background-color: var(--submit-fill);
-}
-
-textarea {
-  padding-bottom: 6.5rem;
-}
-
-textarea::placeholder {
-  color: var(--submit-text);
-  font-family: "Preahvihear", sans-serif;
-  font-size: 1rem;
 }
 
 .my-logo {

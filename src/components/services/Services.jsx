@@ -43,7 +43,7 @@ function Services () {
                             <p>Photography and editing services available.</p>
                             </li> 
                             <li><FaCheckDouble className='service-name-icon' />
-                            <p>Experience in managing and creating content for professional Facebook, Instagram, and Twitter accounts.</p>
+                            <p>Experience in managing and creating content for professional Facebook, Instagram, and X accounts.</p>
                             </li>
                             <li><FaCheckDouble className='service-name-icon' />
                             <p>Advertising design services available.</p>

@@ -8,10 +8,11 @@
   min-height: 80vh;
 }
 
-#services > h1 {
+#services h1 {
   text-align: center;
   font-size: 4rem;
-  font-family: "Borel", cursive;
+  font-family: "Preahvihear", sans-serif;
+  margin-bottom: 2rem;
 }
 
 .services-container {
