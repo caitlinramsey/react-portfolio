@@ -15,7 +15,7 @@ const projectInfo = [
     image: project1,
     title: "Zooquarium",
     description:
-      "This application allows the user to look up AZA certified zoos and aquariums near them as well as look up photos and facts on individual animals.",
+      "Introducing Zooquarium, a comprehensive app that empowers users to explore the wonders of the animal kingdom! With Zooquarium, you can effortlessly discover AZA-accredited zoos and aquariums in your vicinity, as well as delve into an extensive library of captivating photos and fascinating facts about a wide array of animals. Unleash your curiosity and immerse yourself in the world of wildlife with Zooquarium today!",
     github: "https://github.com/caitlinramsey/zooquarium",
     demo: "https://caitlinramsey.github.io/zooquarium/",
   },
@@ -24,9 +24,9 @@ const projectInfo = [
     image: project2,
     title: "BUGbytes",
     description:
-      "Introducing BUGBytes: The ultimate hub for gamers to connect, collaborate, and conquer challenges together. With BUGBytes, you can create an account and dive into a world of shared insights and creative problem-solving. Tackle bugs in games as a community, enhancing the gaming experience for everyone involved.",
+      "Introducing BUGBytes: The ultimate hub for gamers to connect, collaborate, and conquer challenges together. With BUGBytes, you can create an account and dive into a world of shared insights and creative problem-solving. Tackle bugs in games as a community, enhancing the gaming experience for everyone involved. The live site link is now a video walkthrough due to the dynos getting too expensive.",
     github: "https://github.com/HarrisSte/BUGbytes",
-    demo: "https://bugbytes-eea33095845f.herokuapp.com/",
+    demo: "https://drive.google.com/file/d/1j85iFsPAVjscj3OAoofXpznVFT4epvQI/view",
   },
   {
     id: 3,
@@ -49,9 +49,9 @@ const projectInfo = [
   {
     id: 5,
     image: project5,
-    title: "Weather Dashboard",
+    title: "WeatherPro",
     description:
-      "This application allows you to view the current weather and 5 day forecast in any US city.",
+      "Introducing WeatherPro, a cutting-edge Weather Dashboard app that provides comprehensive and accurate weather insights for any city in the United States. WeatherPro is your go-to solution for staying informed and prepared for any weather conditions. With WeatherPro, you can easily view the current weather conditions, including temperature, humidity, wind speed, and precipitation. The user-friendly interface makes it simple to navigate and quickly access the information you need.",
     github: "https://github.com/caitlinramsey/weather-forecast",
     demo: "https://caitlinramsey.github.io/weather-forecast/",
   },
